@@ -5,4 +5,5 @@ body {
 .main_nav {
     display: flex;
     justify-content: center;
+    flex: auto;
 }
