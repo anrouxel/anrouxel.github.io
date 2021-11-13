@@ -5,3 +5,7 @@ body {
 .main_nav {
     display: flex;
 }
+
+.main_nav.li {
+    list-style: none;
+}
