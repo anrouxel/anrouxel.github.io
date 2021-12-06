@@ -3,7 +3,6 @@ const github_repo = document.querySelector('.github')
 fetch('https://api.github.com/users/anrouxel/repos')
 .then((response) => response.json())
 .then((json) => {
-    console.log(json)
     for (const repo of json) {
         let github = document.createElement('div')
         github.className = "feature col"
@@ -54,7 +53,6 @@ fetch('https://api.github.com/users/anrouxel/repos')
         github.appendChild(text)
         github.appendChild(link)
 
-        console.log(github)
         github_repo.appendChild(github)
     }
 })
