@@ -1,33 +1,46 @@
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-    margin-bottom: 4rem;
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item, #home {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 3rem);
 }
 
 #slide1 {
-    background-image: url('../img/2021.06.09\ BingWallpaper.jpg');
+    background-image: url('../img/IMG_5155.JPG');
 }
 
 #slide2 {
-    background-image: url('../img/2021.06.12\ BingWallpaper.jpg');
+    background-image: url('../img/IMG_0153.JPG');
 }
 
 #slide3 {
-    background-image: url('../img/2021.06.14\ BingWallpaper.jpg');
+    background-image: url('../img/DSCF4517.JPG');
 }
 
 .diapo {
     background-position: 50%;
+    background-size: cover;
     bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
+}
+
+/* DIVIDER
+-------------------------------------------------- */
+
+.b-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
