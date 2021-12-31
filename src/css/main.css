@@ -1,0 +1,33 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item, #home {
+    height: calc(100vh - 100px);
+}
+
+#slide1 {
+    background-image: url('../img/2021.06.09\ BingWallpaper.jpg');
+}
+
+#slide2 {
+    background-image: url('../img/2021.06.12\ BingWallpaper.jpg');
+}
+
+#slide3 {
+    background-image: url('../img/2021.06.14\ BingWallpaper.jpg');
+}
+
+.diapo {
+    background-position: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
