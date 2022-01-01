@@ -26,20 +26,26 @@ function Github_repo(json) {
     let github_title = document.createElement('h2')
     let github_subtitle = document.createElement('p')
     let github_button = document.createElement('a')
+    let github_contentText = document.createElement('div')
+    let github_contentButton = document.createElement('div')
 
     github_main.className = "col d-flex align-items-start"
     github_icon.className = "icon-square bg-light text-dark flex-shrink-0 me-3"
     icon.className = "bi bi-github"
     github_button.className = "btn btn-primary"
+    github_content.className = "d-flex flex-column h-100 w-100"
+    github_contentText.className = "d-flex flex-column h-100"
     github_title.textContent = json.name
     github_subtitle.textContent = json.description
     github_button.href = json.html_url
     github_button.textContent = "En savoir plus"
 
     github_icon.appendChild(icon)
-    github_content.appendChild(github_title)
-    github_content.appendChild(github_subtitle)
-    github_content.appendChild(github_button)
+    github_contentText.appendChild(github_title)
+    github_contentText.appendChild(github_subtitle)
+    github_contentButton.appendChild(github_button)
+    github_content.appendChild(github_contentText)
+    github_content.appendChild(github_contentButton)
     github_main.appendChild(github_icon)
     github_main.appendChild(github_content)
     return github_main
