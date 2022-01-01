@@ -1,6 +1,7 @@
 const URL_profile = "https://api.github.com/users/anrouxel"
 const profile = document.getElementById('profile')
 const github_profile = document.getElementById('github_profile')
+const github_repo = document.getElementById('github_repo')
 
 fetch(URL_profile).then((response) => response.json()).then((json) => {
     profile.src = json.avatar_url
@@ -10,6 +11,36 @@ fetch(URL_profile).then((response) => response.json()).then((json) => {
 
 function repositories(URL_repo) {
     fetch(URL_repo).then((response) => response.json()).then((json) => {
-        console.log(json)
+        for (const repo of json) {
+            let github_main = Github_repo(repo)
+            github_repo.appendChild(github_main)
+        }
     })
+}
+
+function Github_repo(json) {
+    let github_main = document.createElement('div')
+    let github_icon = document.createElement('div')
+    let icon = document.createElement('i')
+    let github_content = document.createElement('div')
+    let github_title = document.createElement('h2')
+    let github_subtitle = document.createElement('p')
+    let github_button = document.createElement('a')
+
+    github_main.className = "col d-flex align-items-start"
+    github_icon.className = "icon-square bg-light text-dark flex-shrink-0 me-3"
+    icon.className = "bi bi-github"
+    github_button.className = "btn btn-primary"
+    github_title.textContent = json.name
+    github_subtitle.textContent = json.description
+    github_button.href = json.html_url
+    github_button.textContent = "En savoir plus"
+
+    github_icon.appendChild(icon)
+    github_content.appendChild(github_title)
+    github_content.appendChild(github_subtitle)
+    github_content.appendChild(github_button)
+    github_main.appendChild(github_icon)
+    github_main.appendChild(github_content)
+    return github_main
 }
