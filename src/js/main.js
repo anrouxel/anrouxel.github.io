@@ -4,7 +4,8 @@ const github_profile = document.getElementById('github_profile')
 const github_repo = document.getElementById('github_repo')
 
 fetch(URL_profile).then((response) => response.json()).then((json) => {
-    profile.src = json.avatar_url
+    let profile_avatar = Profile(json.avatar_url)
+    profile.appendChild(profile_avatar)
     github_profile.href = json.html_url
     repositories(json.repos_url)
 })
@@ -16,6 +17,17 @@ function repositories(URL_repo) {
             github_repo.appendChild(github_main)
         }
     })
+}
+
+function Profile(avatar) {
+    let profile_avatar = document.createElement('img')
+    profile_avatar.src = avatar
+    profile_avatar.className = "d-block mx-lg-auto img-fluid"
+    profile_avatar.loading = "lazy"
+    profile_avatar.width = "700"
+    profile_avatar.height = "500"
+    profile_avatar.alt = "Photo de profil"
+    return profile_avatar
 }
 
 function Github_repo(json) {
