@@ -259,16 +259,12 @@
                 <div class="row align-items-center g-lg-5 py-5">
                     <div class="col-lg-7">
                         <babylon extends="minimal">
-                            <model url="src/model/Logo_serre.glb"></model>
+                            <model url="src/model/Logo_serre.glb">
+                                <scaling x="10" y="10" z="10"></scaling>
+                            </model>
                             <camera>
-                                <!-- add camera behaviors -->
                                 <behaviors>
-                                    <!-- enable default auto-rotate behavior -->
                                     <auto-rotate type="0"></auto-rotate>
-                                    <!-- enable and configure the framing behavior -->
-                                    <framing type="2" zoom-on-bounding-info="true" zoom-stops-animation="false"></framing>
-                                    <!-- enable default bouncing behavior -->
-                                    <bouncing type="1"></bouncing>
                                 </behaviors>
                             </camera>
                         </babylon>
