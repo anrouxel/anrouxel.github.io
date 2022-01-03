@@ -6,21 +6,17 @@ const btn_logo_serre = document.getElementById("btn_logo_serre")
 const btn_serre = document.getElementById("btn_serre")
 let model_logo_serre = document.getElementById('model_logo_serre')
 let model_serre = document.getElementById('model_serre')
-var afficher = "Afficher"
-var masquer = "Masquer"
+const afficher = "Afficher"
+const masquer = "Masquer"
 
-console.log('coucou')
-console.log(btn_logo_serre)
-console.log(model_logo_serre)
-console.log(btn_serre)
-console.log(model_serre)
+window.onload = () => {
+    model_logo_serre.style.visibility = 'hidden'
+    model_serre.style.visibility = 'hidden'
+    btn_logo_serre.textContent = afficher
+    btn_serre.textContent = afficher
+}
 
-model_logo_serre.style.visibility = 'hidden'
-model_serre.style.visibility = 'hidden'
-btn_logo_serre.textContent = afficher
-btn_serre.textContent = afficher
-
-btn_logo_serre.addEventListener("click", () => {
+function BTN_logo_serre() {
     if (model_logo_serre.style.visibility == 'hidden') {
         model_logo_serre.style.visibility = 'visible'
         btn_logo_serre.textContent = masquer
@@ -28,9 +24,9 @@ btn_logo_serre.addEventListener("click", () => {
         model_logo_serre.style.visibility = 'hidden'
         btn_logo_serre.textContent = afficher
     }
-})
+}
 
-btn_serre.addEventListener("click", () => {
+function BTN_serre() {
     if (model_serre.style.visibility == 'hidden') {
         model_serre.style.visibility = 'visible'
         btn_serre.textContent = masquer
@@ -38,7 +34,7 @@ btn_serre.addEventListener("click", () => {
         model_serre.style.visibility = 'hidden'
         btn_serre.textContent = afficher
     }
-})
+}
 
 fetch(URL_profile).then((response) => response.json()).then((json) => {
     let profile_avatar = Profile(json.avatar_url)
