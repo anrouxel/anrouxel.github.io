@@ -54,7 +54,6 @@ function Profile(avatar) {
     let profile_avatar = document.createElement('img')
     profile_avatar.src = avatar
     profile_avatar.className = "d-block mx-lg-auto img-fluid"
-    profile_avatar.loading = "lazy"
     profile_avatar.width = "700"
     profile_avatar.height = "500"
     profile_avatar.alt = "Photo de profil"
