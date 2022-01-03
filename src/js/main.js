@@ -9,6 +9,12 @@ let model_serre = document.getElementById('model_serre')
 var afficher = "Afficher"
 var masquer = "Masquer"
 
+console.log('coucou')
+console.log(btn_logo_serre)
+console.log(model_logo_serre)
+console.log(btn_serre)
+console.log(model_serre)
+
 model_logo_serre.style.visibility = 'hidden'
 model_serre.style.visibility = 'hidden'
 btn_logo_serre.textContent = afficher
