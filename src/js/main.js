@@ -2,6 +2,37 @@ const URL_profile = "https://api.github.com/users/anrouxel"
 const profile = document.getElementById('profile')
 const github_profile = document.getElementById('github_profile')
 const github_repo = document.getElementById('github_repo')
+const btn_logo_serre = document.getElementById("btn_logo_serre")
+const btn_serre = document.getElementById("btn_serre")
+let model_logo_serre = document.getElementById('model_logo_serre')
+let model_serre = document.getElementById('model_serre')
+var afficher = "Afficher"
+var masquer = "Masquer"
+
+model_logo_serre.style.visibility = 'hidden'
+model_serre.style.visibility = 'hidden'
+btn_logo_serre.textContent = afficher
+btn_serre.textContent = afficher
+
+btn_logo_serre.addEventListener("click", () => {
+    if (model_logo_serre.style.visibility == 'hidden') {
+        model_logo_serre.style.visibility = 'visible'
+        btn_logo_serre.textContent = masquer
+    } else if (model_logo_serre.style.visibility == 'visible') {
+        model_logo_serre.style.visibility = 'hidden'
+        btn_logo_serre.textContent = afficher
+    }
+})
+
+btn_serre.addEventListener("click", () => {
+    if (model_serre.style.visibility == 'hidden') {
+        model_serre.style.visibility = 'visible'
+        btn_serre.textContent = masquer
+    } else if (model_serre.style.visibility == 'visible') {
+        model_serre.style.visibility = 'hidden'
+        btn_serre.textContent = afficher
+    }
+})
 
 fetch(URL_profile).then((response) => response.json()).then((json) => {
     let profile_avatar = Profile(json.avatar_url)
