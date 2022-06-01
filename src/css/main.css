@@ -13,14 +13,18 @@
 }
 
 #slide1 {
-    background-image: url('../img/IMG_5155.JPG');
+    background-image: url('../img/IMG_20220321_152210.jpg');
 }
 
 #slide2 {
-    background-image: url('../img/IMG_0153.JPG');
+    background-image: url('../img/IMG_5155.JPG');
 }
 
 #slide3 {
+    background-image: url('../img/IMG_0153.JPG');
+}
+
+#slide4 {
     background-image: url('../img/DSCF4517.JPG');
 }
 
