@@ -1,6 +1,23 @@
 ﻿@page "/"
 
+@using System.Net.Http
+@inject HttpClient Http
+
 <PageTitle>Antonin Rouxel - Portfolio</PageTitle>
 
-<section id="home">
+<section id="home" style="background-color: aqua;" class="d-flex">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5" style="margin: auto;">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 mb-3">Antonin Rouxel</h1>
+                <p class="col-lg-10 fs-4">Je suis étudiant en BUT informatique à l'IUT de Nantes et <br> je cherche une
+                    alternance d'un an reconductible en développement web</p>
+                <div class="d-grid gap-2 d-sm-flex mb-5">
+                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://www.protection-civile.org/">C'est
+                        partie</a>
+                </div>
+            </div>
+            <div id="profile" class="col-md-10 mx-auto col-lg-5"><img src="https://avatars.githubusercontent.com/u/59473377?v=4" alt="" srcset=""></div>
+        </div>
+    </div>
 </section>
