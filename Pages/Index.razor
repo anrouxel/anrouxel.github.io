@@ -10,9 +10,9 @@
     <div class="container col-xxl-8 px-4 py-5 m-auto">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                @if (github != null)
+                @if (github.profile != null)
                 {
-                    <img src="@github.avatar_url" class="d-block mx-lg-auto img-fluid" alt="avatar" loading="lazy">
+                    <img src="@github.profile!.avatar_url" class="d-block mx-lg-auto img-fluid" alt="avatar" loading="lazy">
                 }
             </div>
             <div class="col-lg-6">
@@ -29,10 +29,48 @@
     </div>
 </section>
 
+
+@if (github.repo != null)
+{
+    <section id="repository" class="d-flex">
+        <div class="row row-cols-1 row-cols-lg-6">
+            @foreach (var item in github.repo)
+            {
+                <RadzenCard Class="m-3">
+                    <div class="d-flex flex-row p-3">
+                        <RadzenIcon Icon="android" Class="rounded-circle float-start me-3"
+                    Style="width: 100px; height: 100px;" />
+                        <div>
+                            <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">Dépot</RadzenText>
+                            <RadzenText TextStyle="TextStyle.Body1"><b>@item.name</b></RadzenText>
+                        </div>
+                    </div>
+                    <RadzenCard Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
+                style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem;">
+                        <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light"><strong>Information</strong>
+                        </RadzenText>
+                        <div class="row">
+                            <RadzenText TextStyle="TextStyle.Overline" Class="rz-color-primary-light d-flex mt-3 mb-0">
+                                Description
+                            </RadzenText>
+                            <RadzenText TextStyle="TextStyle.Body1"><b>@item.description</b></RadzenText>
+                        </div>
+                    </RadzenCard>
+                    <div class="text-end">
+                        <RadzenButton Variant="Variant.Text" Class="rz-text-secondary-color" Text="Cancel" />
+                        <RadzenButton Variant="Variant.Text" Text="Send" />
+                    </div>
+                </RadzenCard>
+            }
+        </div>
+    </section>
+}
+
 @code {
-    private Github? github;
+    private Github github = new Github();
     protected override async Task OnInitializedAsync()
     {
-        github = await Http.GetFromJsonAsync<Github>("https://api.github.com/users/anrouxel");
+        github.profile = await Http.GetFromJsonAsync<Profile>("https://api.github.com/users/anrouxel");
+        github.repo = await Http.GetFromJsonAsync<Repo[]>(github!.profile!.repos_url);
     }
 }
