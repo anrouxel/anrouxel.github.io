@@ -3,6 +3,7 @@
 @using System.Net.Http.Json
 @using System.Threading.Tasks
 @inject HttpClient Http
+@inject DialogService DialogService
 
 <PageTitle>Antonin Rouxel - Portfolio</PageTitle>
 
@@ -32,45 +33,72 @@
 
 @if (github.repo != null)
 {
-    <section id="repository" class="d-flex">
-        <div class="row row-cols-1 row-cols-lg-6">
-            @foreach (var item in github.repo)
-            {
-                <RadzenCard Class="m-3">
-                    <div class="d-flex flex-row p-3">
-                        <RadzenIcon Icon="android" Class="rounded-circle float-start me-3"
-                    Style="width: 100px; height: 100px;" />
-                        <div>
-                            <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">Dépot</RadzenText>
-                            <RadzenText TextStyle="TextStyle.Body1"><b>@item.name</b></RadzenText>
-                        </div>
-                    </div>
-                    <RadzenCard Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
-                style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem;">
-                        <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light"><strong>Information</strong>
-                        </RadzenText>
-                        <div class="row">
-                            <RadzenText TextStyle="TextStyle.Overline" Class="rz-color-primary-light d-flex mt-3 mb-0">
-                                Description
-                            </RadzenText>
-                            <RadzenText TextStyle="TextStyle.Body1"><b>@item.description</b></RadzenText>
-                        </div>
-                    </RadzenCard>
-                    <div class="text-end">
-                        <RadzenButton Variant="Variant.Text" Class="rz-text-secondary-color" Text="Cancel" />
-                        <RadzenButton Variant="Variant.Text" Text="Send" />
-                    </div>
-                </RadzenCard>
-            }
-        </div>
+    <section id="repository" class="container px-4 py-5">
+        <RadzenTabs Class="m-auto" RenderMode="TabRenderMode.Client">
+            <Tabs>
+                <RadzenTabsItem Text="Orders">
+                    <RadzenDataList PageSize="3" WrapItems="true" AllowPaging="true" Data="@(github.repo)" TItem="Repo">
+                        <Template Context="item">
+                            <RadzenCard Style="width: 250px; height: 100%;" Class="rz-border-radius-3">
+                                <div class="d-flex flex-row p-3">
+                                    <RadzenImage Path="@github.profile!.avatar_url" Class="rounded-circle float-start me-3"
+                                    Style="width: 100px; height: 100px;" />
+                                    <div>
+                                        <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">Github
+                                        </RadzenText>
+                                        <RadzenText TextStyle="TextStyle.Body1"><b>@(item.name)</b></RadzenText>
+                                    </div>
+                                </div>
+                                <RadzenCard Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
+                                style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem;">
+                                    <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light">
+                                        <strong>Information</strong>
+                                    </RadzenText>
+                                    <div class="row">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Overline"
+                                            Class="rz-color-primary-light d-flex mt-3 mb-0">
+                                                Description</RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body1" Style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>@(item.description)</b></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                                <div class="d-flex">
+                                    <RadzenButton Class="me-auto" Text="Plus d'information" Variant=@Variant.Outlined
+                                    ButtonStyle="@ButtonStyle.Secondary" Click="() => MoreInformationRepo(item)" />
+                                    <RadzenButton class="ms-auto" Text="Send" ButtonStyle="@ButtonStyle.Primary" />
+                                </div>
+                            </RadzenCard>
+                        </Template>
+                    </RadzenDataList>
+                </RadzenTabsItem>
+            </Tabs>
+        </RadzenTabs>
     </section>
 }
 
+@error
+
 @code {
     private Github github = new Github();
+    private string? error;
     protected override async Task OnInitializedAsync()
     {
         github.profile = await Http.GetFromJsonAsync<Profile>("https://api.github.com/users/anrouxel");
         github.repo = await Http.GetFromJsonAsync<Repo[]>(github!.profile!.repos_url);
+    }
+
+    public async Task MoreInformationRepo(Repo repo)
+    {
+        try
+        {
+            await DialogService.OpenAsync<DialogCardRepo>($"Repo : {repo.name}",
+            new Dictionary<string, object>() { { "repo", repo } },
+            new DialogOptions() { Width = "700px", Height = "508px", Resizable = true, Draggable = true });
+        }
+        catch (Exception e)
+        {
+            error = e.Message;
+        }
     }
 }
