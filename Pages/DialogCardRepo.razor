@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-lg-6 d-flex p-3">
-        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 rz-border-radius-3 w-100">
             <div class="d-flex flex-row">
                 <RadzenIcon Icon="android" Class="rounded-circle float-start mt-1 me-3"
                     Style="width: 90px; height: 90px;" />
@@ -17,26 +17,26 @@
         </RadzenCard>
     </div>
     <div class="col-lg-6 d-flex p-3">
-        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 rz-border-radius-3 w-100">
             <RadzenText TextStyle="TextStyle.Subtitle1">Lien</RadzenText>
             <div class="row">
                 @if (repo!.homepage != null)
                 {
                     <div class="col">
-                        <RadzenButton Variant=Variant.Outlined Click="() => link(repo.homepage)">Site Web</RadzenButton>
+                        <RadzenButton Variant=Variant.Outlined Click="() => link(repo.homepage)" class="rz-border-radius-3">Site Web</RadzenButton>
                     </div>
                 }
                 @if (repo!.html_url != null)
                 {
                     <div class="col">
-                        <RadzenButton Variant=Variant.Outlined Click="() => link(repo.html_url)">Dépôt</RadzenButton>
+                        <RadzenButton Variant=Variant.Outlined Click="() => link(repo.html_url)" class="rz-border-radius-3">Dépôt</RadzenButton>
                     </div>
                 }
             </div>
         </RadzenCard>
     </div>
     <div class="col-lg-6 d-flex p-3">
-        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 rz-border-radius-3 w-100">
             <RadzenText TextStyle="TextStyle.Subtitle1">Information</RadzenText>
             @if (repo!.description != null)
             {
@@ -67,20 +67,20 @@
         </RadzenCard>
     </div>
     <div class="col-lg-6 d-flex p-3">
-        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 rz-border-radius-3 w-100">
             <RadzenText TextStyle="TextStyle.Subtitle1">Clone</RadzenText>
             @if (repo!.clone_url != null)
             {
                 <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-3 mb-0"
                 Style="color: var(--rz-text-tertiary-color);">HTTPS</RadzenText>
-                <RadzenTextBox TextStyle="TextStyle.Body2" ReadOnly=true Value=@(repo.clone_url) Style="width: 100%;">
+                <RadzenTextBox TextStyle="TextStyle.Body2" ReadOnly=true Value=@(repo.clone_url) Style="width: 100%;" class="rz-border-radius-3">
                 </RadzenTextBox>
             }
             @if (repo!.ssh_url != null)
             {
                 <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-3 mb-0"
                 Style="color: var(--rz-text-tertiary-color);">SSH</RadzenText>
-                <RadzenTextBox TextStyle="TextStyle.Body2" ReadOnly=true Value=@(repo.ssh_url) Style="width: 100%;">
+                <RadzenTextBox TextStyle="TextStyle.Body2" ReadOnly=true Value=@(repo.ssh_url) Style="width: 100%;" class="rz-border-radius-3">
                 </RadzenTextBox>
             }
         </RadzenCard>
