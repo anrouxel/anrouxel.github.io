@@ -1,8 +1,10 @@
 @inject Radzen.DialogService dialogService
+@inject NavigationManager navigationManager
 
-<div class="row my-4">
-    <div class="col-md-12">
-        <RadzenCard Style="width: 100%; overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0">
+
+<div class="row">
+    <div class="col-lg-6 d-flex p-3">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
             <div class="d-flex flex-row">
                 <RadzenIcon Icon="android" Class="rounded-circle float-start mt-1 me-3"
                     Style="width: 90px; height: 90px;" />
@@ -14,10 +16,27 @@
             </div>
         </RadzenCard>
     </div>
-</div>
-<div class="row">
-    <div class="col-lg-6 d-flex">
-        <RadzenCard Style="width: 100%; overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0">
+    <div class="col-lg-6 d-flex p-3">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
+            <RadzenText TextStyle="TextStyle.Subtitle1">Lien</RadzenText>
+            <div class="row">
+                <div class="col">
+                    @if (repo!.homepage != null)
+                    {
+                        <RadzenButton Variant=Variant.Outlined Click="() => link(repo.homepage)">Site Web</RadzenButton>
+                    }
+                </div>
+                <div class="col">
+                    @if (repo!.html_url != null)
+                    {
+                        <RadzenButton Variant=Variant.Outlined Click="() => link(repo.html_url)">Dépôt</RadzenButton>
+                    }
+                </div>
+            </div>
+        </RadzenCard>
+    </div>
+    <div class="col-lg-6 d-flex p-3">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
             <RadzenText TextStyle="TextStyle.Subtitle1">Information</RadzenText>
             @if (repo!.description != null)
             {
@@ -47,28 +66,32 @@
             </div>
         </RadzenCard>
     </div>
-    <div class="col-lg-6 d-flex">
-        <RadzenCard Style="width: 100%; overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0">
-            <RadzenText TextStyle="TextStyle.Subtitle1">Lien</RadzenText>
-            <div class="row">
-                <div class="col">
-                    <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-3 mb-0"
-                        Style="color: var(--rz-text-tertiary-color);">Description</RadzenText>
-                    <RadzenText TextStyle="TextStyle.Body2"><b>@repo!.description</b></RadzenText>
-                </div>
-            </div>
+    <div class="col-lg-6 d-flex p-3">
+        <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
+            <RadzenText TextStyle="TextStyle.Subtitle1">Clone</RadzenText>
+            @if (repo!.clone_url != null)
+            {
+                <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-3 mb-0"
+                Style="color: var(--rz-text-tertiary-color);">HTTPS</RadzenText>
+                <RadzenTextBox TextStyle="TextStyle.Body2" ReadOnly=true Value=@(repo.clone_url) Style="width: 100%;">
+                </RadzenTextBox>
+            }
+            @if (repo!.ssh_url != null)
+            {
+                <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-3 mb-0"
+                Style="color: var(--rz-text-tertiary-color);">SSH</RadzenText>
+                <RadzenTextBox TextStyle="TextStyle.Body2" ReadOnly=true Value=@(repo.ssh_url) Style="width: 100%;">
+                </RadzenTextBox>
+            }
         </RadzenCard>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12 text-end">
-        <RadzenButton Click="@((args) => dialogService.Close(false))" Variant="Variant.Flat"
-            ButtonStyle="ButtonStyle.Light" Text="Cancel" Style="width: 120px" Class="me-1" />
-        <RadzenButton Click="@((args) => dialogService.Close(true))" Variant="Variant.Flat" Text="OK"
-            Style="width: 120px" />
     </div>
 </div>
 
 @code {
     [Parameter] public Repo? repo { get; set; }
+
+    private void link(string uri)
+    {
+        navigationManager.NavigateTo(uri, true);
+    }
 }
