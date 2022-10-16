@@ -20,18 +20,18 @@
         <RadzenCard Style="overflow: hidden; border: var(--rz-grid-cell-border)" Class="rz-shadow-0 w-100">
             <RadzenText TextStyle="TextStyle.Subtitle1">Lien</RadzenText>
             <div class="row">
-                <div class="col">
-                    @if (repo!.homepage != null)
-                    {
+                @if (repo!.homepage != null)
+                {
+                    <div class="col">
                         <RadzenButton Variant=Variant.Outlined Click="() => link(repo.homepage)">Site Web</RadzenButton>
-                    }
-                </div>
-                <div class="col">
-                    @if (repo!.html_url != null)
-                    {
+                    </div>
+                }
+                @if (repo!.html_url != null)
+                {
+                    <div class="col">
                         <RadzenButton Variant=Variant.Outlined Click="() => link(repo.html_url)">Dépôt</RadzenButton>
-                    }
-                </div>
+                    </div>
+                }
             </div>
         </RadzenCard>
     </div>
