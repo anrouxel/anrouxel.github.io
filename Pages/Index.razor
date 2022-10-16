@@ -7,10 +7,10 @@
 
 <PageTitle>Antonin Rouxel - Portfolio</PageTitle>
 
-<section id="home" class="d-flex">
+<section id="home" class="d-flex h-100vh">
     <div class="container col-xxl-8 px-4 py-5 m-auto">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
+            <div class="col-10 col-sm-8 col-lg-6 mx-auto">
                 @if (github.profile != null)
                 {
                     <img src="@github.profile!.avatar_url" class="d-block mx-lg-auto img-fluid" alt="avatar" loading="lazy">
@@ -18,55 +18,223 @@
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Antonin Rouxel</h1>
-                <p class="lead">Je suis étudiant en BUT informatique à l'IUT de Nantes et je cherche un stage en développement web</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div>
+                <p class="lead">Je suis étudiant en BUT informatique à l'IUT de Nantes et je cherche un stage en
+                    développement web</p>
             </div>
         </div>
     </div>
 </section>
 
+<section class="h-100vh d-flex bg-light">
+    <div class="my-auto w-100">
+        <h1 class="fw-bold w-100 text-center">Compétence</h1>
+        <div class="d-flex">
+            <RadzenTabs Class="w-75 m-auto" RenderMode="TabRenderMode.Client">
+                <Tabs>
+                    <RadzenTabsItem Text="Développement">
+                        <div class="row">
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0"><strong>C#</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>Kotlin</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>PHP</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0"><strong>HTML -
+                                                    CSS</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>Golang</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>Python</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>SQL</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                        </div>
+                    </RadzenTabsItem>
+                    <RadzenTabsItem Text="3D">
+                        <div class="row">
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>SolidWorks</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0"><strong>Autodesk
+                                                    Inventor</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>Blender</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                            <div class="col-4">
+                                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div>
+                                            <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
+                                                <strong>Blockbench</strong>
+                                            </RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
+                                            <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
+                                        </div>
+                                    </div>
+                                </RadzenCard>
+                            </div>
+                        </div>
+                    </RadzenTabsItem>
+                </Tabs>
+            </RadzenTabs>
+        </div>
+    </div>
+</section>
 
 @if (github.repo != null)
 {
-    <section id="repository" class="d-flex">
-        <RadzenDataList class="w-75 m-auto" PageSize="4" WrapItems="true" AllowPaging="true" Data="@(github.repo)"
-        TItem="Repo">
-            <Template Context="item">
-                <RadzenCard Style="width: 250px;" Class="rz-border-radius-3">
-                    <div class="d-flex flex-row p-3">
-                        <RadzenImage Path="@github.profile!.avatar_url" Class="rounded-circle float-start me-3"
-                        Style="width: 100px; height: 100px;" />
-                        <div>
-                            <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">Github
-                            </RadzenText>
-                            <RadzenText TextStyle="TextStyle.Body1"><b style="word-break: break-word;">@(item.name)</b></RadzenText>
-                        </div>
-                    </div>
-                    <RadzenCard Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
-                    style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem; height: 200px;">
-                        <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light">
-                            <strong>Information</strong>
-                        </RadzenText>
-                        <div class="row">
-                            <div>
-                                <RadzenText TextStyle="TextStyle.Overline" Class="rz-color-primary-light d-flex mt-3 mb-0">
-                                    Description</RadzenText>
-                                <RadzenText TextStyle="TextStyle.Body1">
-                                    <b>@(item.description)</b>
-                                </RadzenText>
+    <section id="repository" class="h-100vh d-flex">
+        <div class="my-auto w-100">
+            <h1 class="fw-bold w-100 text-center">Projet</h1>
+            <div class="d-flex">
+                <RadzenDataList class="w-75 m-auto" PageSize="4" WrapItems="true" AllowPaging="true" Data="@(github.repo)"
+                TItem="Repo">
+                    <Template Context="item">
+                        <RadzenCard Style="width: 250px;" Class="rz-border-radius-3">
+                            <div class="d-flex flex-row p-3">
+                                <i class="bi bi-github rounded-circle float-start me-3"></i>
+                                <RadzenImage Path="@github.profile!.avatar_url" Class="rounded-circle float-start me-3"
+                                Style="width: 100px; height: 100px;" />
+                                <div>
+                                    <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">Github
+                                    </RadzenText>
+                                    <RadzenText TextStyle="TextStyle.Body1"><b
+                                        style="word-break: break-word;">@(item.name)</b>
+                                    </RadzenText>
+                                </div>
                             </div>
-                        </div>
-                    </RadzenCard>
-                    <div class="d-flex">
-                        <RadzenButton Class="me-auto rz-border-radius-3" Text="Plus d'information" Variant=@Variant.Outlined
-                        ButtonStyle="@ButtonStyle.Secondary" Click="() => MoreInformationRepo(item)" />
-                    </div>
-                </RadzenCard>
-            </Template>
-        </RadzenDataList>
+                            <RadzenCard Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
+                            style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem; height: 200px;">
+                                <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light">
+                                    <strong>Information</strong>
+                                </RadzenText>
+                                <div class="row">
+                                    <div>
+                                        <RadzenText TextStyle="TextStyle.Overline"
+                                        Class="rz-color-primary-light d-flex mt-3 mb-0">
+                                            Description</RadzenText>
+                                        <RadzenText TextStyle="TextStyle.Body1">
+                                            <b>@(item.description)</b>
+                                        </RadzenText>
+                                    </div>
+                                </div>
+                            </RadzenCard>
+                            <div class="d-flex">
+                                <RadzenButton Class="me-auto rz-border-radius-3" Text="Plus d'information"
+                                Variant=@Variant.Outlined ButtonStyle="@ButtonStyle.Secondary"
+                                Click="() => MoreInformationRepo(item)" />
+                            </div>
+                        </RadzenCard>
+                    </Template>
+                </RadzenDataList>
+            </div>
+        </div>
     </section>
 }
 
@@ -82,6 +250,6 @@
     {
         await DialogService.OpenAsync<DialogCardRepo>("Plus d'information",
         new Dictionary<string, object>() { { "repo", repo } },
-        new DialogOptions() {CssClass="modal", ShowClose=false, Resizable = false });
+        new DialogOptions() { CssClass = "modal", ShowClose = false, Resizable = false });
     }
 }
