@@ -4,6 +4,7 @@
 @using System.Threading.Tasks
 @inject HttpClient Http
 @inject DialogService DialogService
+@inject IJSRuntime jsRuntime
 
 <PageTitle>Antonin Rouxel - Portfolio</PageTitle>
 
@@ -238,6 +239,8 @@
 }
 
 @code {
+    private bool mobile { get; set; }
+    private int repository_num_show {get; set;}
     private Github github = new Github();
     protected override async Task OnInitializedAsync()
     {
@@ -247,6 +250,15 @@
 
     public async Task MoreInformationRepo(Repo repo)
     {
+        
+        mobile = await jsRuntime.InvokeAsync<bool>("isDevice");
+        if (mobile)
+        {
+            repository_num_show = 4;
+        } else
+        {
+            repository_num_show = 1;
+        }
         await DialogService.OpenAsync<DialogCardRepo>("Plus d'information",
         new Dictionary<string, object>() { { "repo", repo } },
         new DialogOptions() { CssClass = "modal", ShowClose = false, Resizable = false });

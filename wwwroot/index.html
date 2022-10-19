@@ -27,6 +27,11 @@
     <script>navigator.serviceWorker.register('service-worker.js');</script>
     <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
     <script src="lib/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function isDevice() {
+            return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile/i.test(navigator.userAgent);
+        }
+    </script>
 </body>
 
 </html>
