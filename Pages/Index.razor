@@ -50,12 +50,14 @@
     </div>
 </section>
 
-<section class="h-100vh d-flex flex-column text-white" style="background-image: url('img/IMG_8915.JPG'); background-position: 50%; background-size: cover;">
+<section class="h-100vh d-flex flex-column text-white"
+    style="background-image: url('img/IMG_8915.JPG'); background-position: 50%; background-size: cover;">
     <div class="m-auto container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
             <div class="text-center text-lg-start">
                 <h1 class="display-4 fw-bold lh-1 mb-3">Projet Professionnel</h1>
-                <p class="col-lg-10 fs-4">Mon projet professionnel est de plutôt travailler dans le domaine de l'administration des réseaux. Les orientations pour ce projet professionnel sont
+                <p class="col-lg-10 fs-4">Mon projet professionnel est de plutôt travailler dans le domaine de
+                    l'administration des réseaux. Les orientations pour ce projet professionnel sont
                     soit de passer par un BUT Informatique ou BTS SNIR ou SIO.</p>
             </div>
         </div>
@@ -227,7 +229,7 @@
 @if (github.repo != null)
 {
     <section id="repository" class="h-100vh d-flex flex-column"
-    style="background-image: url('img/IMG_8935.JPG'); background-position: 50%; background-size: cover;">
+    style="background-image: url('img/background.svg'); background-position: 50%; background-size: cover;">
         <div class="my-auto w-100">
             <h1 class="fw-bold w-100 text-center">Projet</h1>
             <div class="d-flex">
@@ -285,6 +287,6 @@
     {
         await DialogService.OpenAsync<DialogCardRepo>("Plus d'information",
         new Dictionary<string, object>() { { "repo", repo } },
-        new DialogOptions() { CssClass = "modal", ShowClose = false, Resizable = false });
+        new DialogOptions() { CloseDialogOnEsc = true, CloseDialogOnOverlayClick = true, Width = "fit-content", Height = "fit-content" });
     }
 }

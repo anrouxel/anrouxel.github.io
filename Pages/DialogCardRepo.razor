@@ -1,6 +1,4 @@
-@inject Radzen.DialogService dialogService
 @inject NavigationManager navigationManager
-
 
 <div class="modal-body row">
     <div class="col-lg-6 d-flex p-3">
@@ -91,10 +89,6 @@
             }
         </RadzenCard>
     </div>
-</div>
-
-<div class="modal-footer d-flex w-100 p-3">
-    <RadzenButton Click="@((args) => dialogService.Close())" Text="Fermer" class="m-auto rz-border-radius-3" />
 </div>
 
 @code {
