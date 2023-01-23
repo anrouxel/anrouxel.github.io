@@ -4,7 +4,6 @@
 @using System.Threading.Tasks
 @inject HttpClient Http
 @inject DialogService DialogService
-@inject IJSRuntime jsRuntime
 
 <PageTitle>Antonin Rouxel - Portfolio</PageTitle>
 
@@ -13,9 +12,18 @@
     <div class="container col-xxl-8 px-4 py-5 m-auto">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6 mx-auto">
-                @if (github.profile != null)
+                @if (timer != null)
                 {
-                    <img src="@github.profile!.avatar_url" class="d-block mx-lg-auto img-fluid" alt="avatar" loading="lazy">
+                    <RadzenRadialGauge Style="width: 100%; height: 500px;">
+                        <RadzenRadialGaugeScale Step="1" Min="0" Max="12" StartAngle="0" EndAngle="360"
+                        ShowFirstTick="false" MinorStep=@minorStep TickLength="20" MinorTickLength="10"
+                        TickLabelOffset="40" TickPosition="GaugeTickPosition.Inside">
+                            <RadzenRadialGaugeScalePointer Value=@hours Length="0.6" ShowValue="false" />
+                            <RadzenRadialGaugeScalePointer Value=@seconds Length="0.9" Fill="red" Width="2"
+                            ShowValue="false" />
+                            <RadzenRadialGaugeScalePointer Value=@minutes Length="0.8" ShowValue="false" />
+                        </RadzenRadialGaugeScale>
+                    </RadzenRadialGauge>
                 }
             </div>
             <div class="col-lg-6">
@@ -276,17 +284,46 @@
 }
 
 @code {
+    private Timer? timer;
+    private double hours;
+    private double minutes;
+    private double seconds;
+    private double minorStep = 12 / 60.0;
     private Github github = new Github();
+
     protected override async Task OnInitializedAsync()
     {
+        timer = new Timer(state =>
+        {
+            var now = DateTime.Now;
+
+            hours = now.Hour % 12 + now.Minute / 60.0;
+
+            minutes = now.Minute * minorStep + now.Second * 12 / 3600.0;
+            seconds = now.Second * minorStep;
+
+            InvokeAsync(StateHasChanged);
+        }, null, 0, 1000);
         github.profile = await Http.GetFromJsonAsync<Profile>("https://api.github.com/users/anrouxel");
         github.repo = await Http.GetFromJsonAsync<Repo[]>(github!.profile!.repos_url);
+    }
+
+    public void Dispose()
+    {
+        timer?.Dispose();
     }
 
     public async Task MoreInformationRepo(Repo repo)
     {
         await DialogService.OpenAsync<DialogCardRepo>("Plus d'information",
         new Dictionary<string, object>() { { "repo", repo } },
-        new DialogOptions() { CloseDialogOnEsc = true, CloseDialogOnOverlayClick = true, Width = "fit-content", Height = "fit-content" });
+        new DialogOptions()
+        {
+            CloseDialogOnEsc = true,
+            CloseDialogOnOverlayClick = true,
+            Width = "fit-content",
+            Height =
+        "fit-content"
+        });
     }
 }
