@@ -3,7 +3,7 @@ function getScreenWidth() {
 }
 
 function setOnResizeEvent(dotnetHelper) {
-    window.addEventListener('resize', function(){
+    window.addEventListener('resize', function () {
         dotnetHelper.invokeMethodAsync('UpdatePageSize');
     });
 }
