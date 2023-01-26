@@ -40,9 +40,9 @@
 <section class="h-100vh d-flex flex-column bg-light">
     <div class="m-auto container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
-            <div class="col-12 col-lg-7 text-center text-lg-start">
-                <h1 class="display-4 fw-bold lh-1 mb-3">Projet Personnel</h1>
-                <p class="col-lg-10 fs-4">Je suis membre de l'association Au-Delà du Regard depuis 2019. Grâce à
+            <div class="col-12 col-lg-7">
+                <h1 class="display-4 fw-bold lh-1 mb-3 text-center text-lg-start">Projet Personnel</h1>
+                <p class="col-lg-10 fs-4 text-start">Je suis membre de l'association Au-Delà du Regard depuis 2019. Grâce à
                     cette association j'ai pu partir une semaine et demi dans le désert Tunisien. Après ce voyage
                     j'ai participé avec l'association pour présenté le film qu'ils ont réalisé 2018 et animé des
                     débat après celui si. J'ai aussi fait de la radio avec l'association pour présenté le voyage
@@ -53,7 +53,7 @@
                         Au-Delà du Regard</RadzenButton>
                 </div>
             </div>
-            <div class="col-12 col-md-10 mx-auto col-lg-5">
+            <div class="col-12 col-md-10 mx-auto col-lg-5 d-none d-sm-block">
                 <img src="https://www.audeladuregard.fr/wp-content/themes/audela2016/images/logo_audela.png"
                     class="d-block mx-lg-auto img-fluid" alt="Logo Au Delà du Regard" width="700" height="500">
             </div>
@@ -65,9 +65,9 @@
     style="background-image: url('img/IMG_8915.JPG'); background-position: 50%; background-size: cover;">
     <div class="m-auto container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
-            <div class="col-12 text-center text-lg-start">
-                <h1 class="display-4 fw-bold lh-1 mb-3">Projet Professionnel</h1>
-                <p class="col-lg-10 fs-4">Mon projet professionnel est de plutôt travailler dans le domaine de
+            <div class="col-12">
+                <h1 class="display-4 fw-bold lh-1 mb-3 text-center text-lg-start">Projet Professionnel</h1>
+                <p class="col-lg-10 fs-4 text-start">Mon projet professionnel est de plutôt travailler dans le domaine de
                     l'administration des réseaux. Les orientations pour ce projet professionnel sont
                     soit de passer par un BUT Informatique ou BTS SNIR ou SIO.</p>
             </div>
@@ -79,33 +79,54 @@
     <div class="my-auto w-100">
         <h1 class="fw-bold w-100 text-center">Compétence</h1>
         <div class="d-flex">
-            <RadzenTabs Class="w-75 m-auto" RenderMode="TabRenderMode.Client">
-                <Tabs>
+            <RadzenAccordion class="w-75 m-auto">
+                <Items>
                     @foreach (var category in skills.Select(s => s.Category).Distinct())
                     {
-                        <RadzenTabsItem Text="@category">
-                            <div class="row">
-                                @foreach (var skill in skills.Where(s => s.Category == category))
-                                {
-                                    <div class="col-4">
-                                        <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 m-4">
-                                            <div class="d-flex flex-row align-items-center">
-                                                <div>
-                                                    <RadzenText TextStyle="TextStyle.Subtitle1" class="mb-0">
-                                                        <strong>@skill.Name</strong>
-                                                    </RadzenText>
-                                                    <RadzenText TextStyle="TextStyle.Body2" class="mb-0"></RadzenText>
-                                                    <RadzenText TextStyle="TextStyle.Caption" class="mb-0"></RadzenText>
-                                                </div>
+                        <RadzenAccordionItem Text="@category">
+                            <RadzenDataList PageSize="@PageSize" WrapItems="true" AllowPaging="true"
+                            Data="@(skills.Where(s => s.Category == category))" TItem="Competence">
+                                <Template Context="item">
+                                    <RadzenCard Style="width: 250px;" Class="rz-border-radius-3">
+                                        <div class="d-flex flex-row p-3">
+                                            <div>
+                                                <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">
+                                                    @(item.Category)
+                                                </RadzenText>
+                                                <RadzenText TextStyle="TextStyle.Body1"><b
+                                                        style="word-break: break-word;">@(item.Name)</b>
+                                                </RadzenText>
                                             </div>
+                                        </div>
+                                        <RadzenCard
+                                            Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
+                                            style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem; height: 200px;">
+                                            <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light">
+                                                <strong>Niveau</strong>
+                                            </RadzenText>
+                                            <RadzenRadialGauge Style="width: 100%; height: auto;">
+                                                <RadzenRadialGaugeScale StartAngle="-100" EndAngle="100" Step="2" Min="0"
+                                                Max="100" TickPosition=GaugeTickPosition.None>
+                                                    <RadzenRadialGaugeScalePointer Value=@(item.Level) Length="0.6">
+                                                        <Template Context="pointer">
+                                                            <p>
+                                                                @pointer.Value %
+                                                            </p>
+                                                        </Template>
+                                                    </RadzenRadialGaugeScalePointer>
+                                                    <RadzenRadialGaugeScaleRange From="0" To="33" Fill="red" />
+                                                    <RadzenRadialGaugeScaleRange From="33" To="67" Fill="orange" />
+                                                    <RadzenRadialGaugeScaleRange From="67" To="100" Fill="green" />
+                                                </RadzenRadialGaugeScale>
+                                            </RadzenRadialGauge>
                                         </RadzenCard>
-                                    </div>
-                                }
-                            </div>
-                        </RadzenTabsItem>
+                                    </RadzenCard>
+                                </Template>
+                            </RadzenDataList>
+                        </RadzenAccordionItem>
                     }
-                </Tabs>
-            </RadzenTabs>
+                </Items>
+            </RadzenAccordion>
         </div>
     </div>
 </section>
@@ -169,9 +190,16 @@
     private int PageSize = 4;
     private Github github = new Github();
     List<Competence> skills = new List<Competence>()
-{ new Competence {Name = "C#", Category = "Développement"}, new Competence {Name = "Kotlin", Category =
-"Développement"}, new Competence {Name = "PHP", Category = "Développement"}, new Competence {Name = "HTML - CSS",
-Category = "Développement"}, new Competence {Name = "JavaScript", Category = "Développement"} };
+{
+new Competence {Name = "C#", Category = "Développement", Level = 50},
+new Competence {Name = "Kotlin", Category = "Développement", Level = 75},
+new Competence {Name = "PHP", Category = "Développement", Level = 50},
+new Competence {Name = "HTML - CSS", Category = "Développement", Level = 80},
+new Competence {Name = "JavaScript", Category = "Développement", Level = 10},
+new Competence {Name = "SQL", Category = "Base de données", Level = 60},
+new Competence {Name = "Docker", Category = "Infrastructure", Level = 0},
+new Competence {Name = "Linux", Category = "Système d'exploitation", Level = 80}
+};
 
 
     protected override async Task OnInitializedAsync()
@@ -209,7 +237,7 @@ Category = "Développement"}, new Competence {Name = "JavaScript", Category = "D
     {
         await DialogService.OpenAsync<DialogCardRepo>("Plus d'information",
         new Dictionary<string, object>() { { "repo", repo } },
-        new DialogOptions()
+        new Radzen.DialogOptions()
             {
                 CloseDialogOnEsc = true,
                 CloseDialogOnOverlayClick = true,
