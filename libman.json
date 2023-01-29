@@ -3,11 +3,20 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
+      "library": "babylonjs@5.44.0",
+      "destination": "wwwroot/lib/babylonjs",
+      "files": [
+        "babylon.js"
+      ]
+    },
+    {
       "library": "bootstrap@5.2.3",
-      "destination": "wwwroot/lib",
+      "destination": "wwwroot/lib/bootstrap",
       "files": [
         "css/bootstrap.min.css",
-        "js/bootstrap.bundle.min.js"
+        "css/bootstrap.min.css.map",
+        "js/bootstrap.bundle.min.js",
+        "js/bootstrap.bundle.min.js.map"
       ]
     }
   ]
