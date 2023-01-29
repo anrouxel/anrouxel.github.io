@@ -45,6 +45,8 @@ new CultureInfo("de-DE")
             var js = (IJSInProcessRuntime)JS;
             js.InvokeVoid("blazorCulture.set", language.Name);
 
+            ShowLanguages();
+
             Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
         }
     }
