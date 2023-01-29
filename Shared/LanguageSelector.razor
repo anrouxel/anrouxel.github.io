@@ -1,0 +1,51 @@
+@using System.Globalization
+@inject IJSRuntime JS
+@inject TooltipService tooltipService
+@inject NavigationManager Navigation
+
+<div class="fixed-bottom d-flex flex-column justify-content-end align-items-end me-3 mb-3">
+    @if (showLanguageSelection)
+    {
+        @foreach (var culture in supportedCultures)
+        {
+            <RadzenButton Icon="flag" ButtonStyle="ButtonStyle.Primary" Size="ButtonSize.Large"
+                Class="rz-border-radius-10 rz-shadow-10 mb-3" MouseEnter="@(args => ShowTooltip(args, culture.DisplayName))" Click="(() => setCultureInfo(culture))" />
+        }
+    }
+    <RadzenButton Icon="@buttonIcon" ButtonStyle="ButtonStyle.Primary" Size="ButtonSize.Large"
+        Class="rz-border-radius-10 rz-shadow-10" Click="@ShowLanguages" />
+</div>
+
+@code {
+    private bool showLanguageSelection = false;
+    private string buttonIcon = "flag";
+
+    private CultureInfo[] supportedCultures = new[]
+    {
+new CultureInfo("fr-FR"),
+new CultureInfo("en-US"),
+new CultureInfo("de-DE")
+};
+
+    private void ShowLanguages()
+    {
+        showLanguageSelection = !showLanguageSelection;
+        buttonIcon = showLanguageSelection ? "close" : "flag";
+    }
+
+    private void ShowTooltip(ElementReference elementReference, string language)
+    {
+        tooltipService.Open(elementReference, language, new TooltipOptions() { Position = TooltipPosition.Left });
+    }
+
+    private void setCultureInfo(CultureInfo language)
+    {
+        if (CultureInfo.CurrentCulture != language)
+        {
+            var js = (IJSInProcessRuntime)JS;
+            js.InvokeVoid("blazorCulture.set", language.Name);
+
+            Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+        }
+    }
+}
