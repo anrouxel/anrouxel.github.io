@@ -3,13 +3,6 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "babylonjs@5.44.0",
-      "destination": "wwwroot/lib/babylonjs",
-      "files": [
-        "babylon.js"
-      ]
-    },
-    {
       "library": "bootstrap@5.2.3",
       "destination": "wwwroot/lib/bootstrap",
       "files": [
