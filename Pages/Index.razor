@@ -8,7 +8,7 @@
 @inject NavigationManager navigationManager
 @inject IStringLocalizer<Index> Loc
 
-<PageTitle>Antonin Rouxel - Portfolio</PageTitle>
+<PageTitle>@Loc["page_title"]</PageTitle>
 
 <section id="home" class="d-flex flex-column h-100vh text-white"
     style="background-image: url('img/IMG_9563.JPG'); background-position: 50%; background-size: cover;">
@@ -67,62 +67,64 @@
     </div>
 </section>
 
-<section class="h-100vh d-flex flex-column bg-light">
-    <div class="my-auto w-100">
-        <h1 class="fw-bold w-100 text-center">@Loc["section_competence_title"]</h1>
-        <div class="d-flex">
-            <RadzenAccordion class="w-75 m-auto">
-                <Items>
-                    @foreach (var category in skills.Select(s => s.Category).Distinct())
-                    {
-                        <RadzenAccordionItem Text="@category">
-                            <RadzenDataList PageSize="@PageSize" WrapItems="true" AllowPaging="true"
-                            Data="@(skills.Where(s => s.Category == category))" TItem="Competence">
-                                <Template Context="item">
-                                    <RadzenCard Style="width: 250px;" Class="rz-border-radius-3">
-                                        <div class="d-flex flex-row p-3">
-                                            <div>
-                                                <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">
-                                                    @(item.Category)
-                                                </RadzenText>
-                                                <RadzenText TextStyle="TextStyle.Body1"><b
-                                                        style="word-break: break-word;">@(item.Name)</b>
-                                                </RadzenText>
+@if (skills != null)
+{
+    <section class="h-100vh d-flex flex-column bg-light">
+        <div class="my-auto w-100">
+            <h1 class="fw-bold w-100 text-center">@Loc["section_competence_title"]</h1>
+            <div class="d-flex">
+                <RadzenAccordion class="w-75 m-auto">
+                    <Items>
+                        @foreach (var category in skills.Select(s => s.Category).Distinct())
+                        {
+                            <RadzenAccordionItem Text="@category">
+                                <RadzenDataList PageSize="@PageSize" WrapItems="true" AllowPaging="true"
+                                Data="@(skills.Where(s => s.Category == category))" TItem="Competence">
+                                    <Template Context="item">
+                                        <RadzenCard Style="width: 250px;" Class="rz-border-radius-3">
+                                            <div class="d-flex flex-row p-3">
+                                                <div>
+                                                    <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">
+                                                        @(item.Category)
+                                                    </RadzenText>
+                                                    <RadzenText TextStyle="TextStyle.Body1"><b
+                                                            style="word-break: break-word;">@(item.Name)</b>
+                                                    </RadzenText>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <RadzenCard
-                                            Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
-                                            style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem; height: 200px;">
-                                            <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light">
-                                                <strong>@Loc["section_competence_level"]</strong>
-                                            </RadzenText>
-                                            <RadzenRadialGauge Style="width: 100%; height: auto;">
-                                                <RadzenRadialGaugeScale StartAngle="-100" EndAngle="100" Step="2" Min="0"
-                                                Max="100" TickPosition=GaugeTickPosition.None>
-                                                    <RadzenRadialGaugeScalePointer Value=@(item.Level) Length="0.6">
-                                                        <Template Context="pointer">
-                                                            <p>
-                                                                @pointer.Value %
-                                                            </p>
-                                                        </Template>
-                                                    </RadzenRadialGaugeScalePointer>
-                                                    <RadzenRadialGaugeScaleRange From="0" To="33" Fill="red" />
-                                                    <RadzenRadialGaugeScaleRange From="33" To="67" Fill="orange" />
-                                                    <RadzenRadialGaugeScaleRange From="67" To="100" Fill="green" />
-                                                </RadzenRadialGaugeScale>
-                                            </RadzenRadialGauge>
+                                            <RadzenCard
+                                                Class="my-3 rz-background-color-primary-lighter rz-shadow-0 rz-border-radius-0"
+                                                style="margin: 0 calc(-1 * var(--rz-card-padding)); padding: 2rem; height: 200px;">
+                                                <RadzenText TextStyle="TextStyle.H6" Class="rz-color-primary-light">
+                                                    <strong>@Loc["section_competence_level"]</strong>
+                                                </RadzenText>
+                                                <RadzenRadialGauge Style="width: 100%; height: auto;">
+                                                    <RadzenRadialGaugeScale StartAngle="-100" EndAngle="100" Step="2" Min="0"
+                                                    Max="100" TickPosition=GaugeTickPosition.None>
+                                                        <RadzenRadialGaugeScalePointer Value=@(item.Level) Length="0.6">
+                                                            <Template Context="pointer">
+                                                                <p>
+                                                                    @pointer.Value %
+                                                                </p>
+                                                            </Template>
+                                                        </RadzenRadialGaugeScalePointer>
+                                                        <RadzenRadialGaugeScaleRange From="0" To="33" Fill="red" />
+                                                        <RadzenRadialGaugeScaleRange From="33" To="67" Fill="orange" />
+                                                        <RadzenRadialGaugeScaleRange From="67" To="100" Fill="green" />
+                                                    </RadzenRadialGaugeScale>
+                                                </RadzenRadialGauge>
+                                            </RadzenCard>
                                         </RadzenCard>
-                                    </RadzenCard>
-                                </Template>
-                            </RadzenDataList>
-                        </RadzenAccordionItem>
-                    }
-                </Items>
-            </RadzenAccordion>
+                                    </Template>
+                                </RadzenDataList>
+                            </RadzenAccordionItem>
+                        }
+                    </Items>
+                </RadzenAccordion>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
+}
 
 @if (github.repo != null)
 {
@@ -181,18 +183,7 @@
     private double minorStep = 12 / 60.0;
     private int PageSize = 4;
     private Github github = new Github();
-    List<Competence> skills = new List<Competence>()
-{
-new Competence(Name: "C#", Category: "Développement", Level: 50),
-new Competence(Name: "Kotlin", Category: "Développement", Level: 75),
-new Competence(Name: "PHP", Category: "Développement", Level: 50),
-new Competence(Name: "HTML - CSS", Category: "Développement", Level: 80),
-new Competence(Name: "JavaScript", Category: "Développement", Level: 10),
-new Competence(Name: "SQL", Category: "Base de données", Level: 60),
-new Competence(Name: "Docker", Category: "Infrastructure", Level: 0),
-new Competence(Name: "Linux", Category: "Système d'exploitation", Level: 80)
-};
-
+    List<Competence>? skills = null;
 
     protected override async Task OnInitializedAsync()
     {
@@ -207,6 +198,19 @@ new Competence(Name: "Linux", Category: "Système d'exploitation", Level: 80)
 
             InvokeAsync(StateHasChanged);
         }, null, 0, 1000);
+
+        skills = new List<Competence>()
+{
+new Competence(Name: "C#", Category: Loc["section_competence_name_development"], Level: 50),
+new Competence(Name: "Kotlin", Category: Loc["section_competence_name_development"], Level: 75),
+new Competence(Name: "PHP", Category: Loc["section_competence_name_development"], Level: 50),
+new Competence(Name: "HTML - CSS", Category: Loc["section_competence_name_development"], Level: 80),
+new Competence(Name: "JavaScript", Category: Loc["section_competence_name_development"], Level: 10),
+new Competence(Name: "SQL", Category: Loc["section_competence_name_database"], Level: 60),
+new Competence(Name: "Docker", Category: Loc["section_competence_name_infrastructure"], Level: 0),
+new Competence(Name: "Linux", Category: Loc["section_competence_name_operating_system"], Level: 80)
+};
+
         github.profile = await Http.GetFromJsonAsync<Profile>("https://api.github.com/users/anrouxel");
         github.repo = await Http.GetFromJsonAsync<Repo[]>(github!.profile!.repos_url);
     }

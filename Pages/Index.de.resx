@@ -177,4 +177,24 @@
     <value>Weitere Informationen</value>
     <comment>Text der Schaltfläche für weitere Informationen über die Karte</comment>
   </data>
+  <data name="page_title" xml:space="preserve">
+    <value>Antonin Rouxel - Portfolio</value>
+    <comment>Titel der Seite</comment>
+  </data>
+  <data name="section_competence_name_development" xml:space="preserve">
+    <value>Entwicklung</value>
+    <comment>Name der Fertigkeit Entwicklung</comment>
+  </data>
+  <data name="section_competence_name_database" xml:space="preserve">
+    <value>Datenbank</value>
+    <comment>Name der Fertigkeit Datenbank</comment>
+  </data>
+  <data name="section_competence_name_infrastructure" xml:space="preserve">
+    <value>Infrastruktur</value>
+    <comment>Name der Fertigkeit Infrastruktur</comment>
+  </data>
+  <data name="section_competence_name_operating_system" xml:space="preserve">
+    <value>Betriebssystem</value>
+    <comment>Name der Fertigkeit Betriebssystem</comment>
+  </data>
 </root>

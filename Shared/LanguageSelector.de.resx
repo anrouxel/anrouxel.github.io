@@ -117,84 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="section_home_title" xml:space="preserve">
-    <value>Antonin Rouxel</value>
-    <comment>Title of the section</comment>
+  <data name="french" xml:space="preserve">
+    <value>Französisch</value>
+    <comment>Französische Sprache</comment>
   </data>
-  <data name="section_home_text" xml:space="preserve">
-    <value>I am a student at the IUT in Nantes and I am looking for an internship in web development.</value>
-    <comment>Presentation text of the section</comment>
+  <data name="german" xml:space="preserve">
+    <value>Deutsch</value>
+    <comment>Deutsche Sprache</comment>
   </data>
-  <data name="section_project_personal_title" xml:space="preserve">
-    <value>Personal Project</value>
-    <comment>Title of the section</comment>
-  </data>
-  <data name="section_project_personal_text" xml:space="preserve">
-    <value>I am a member of the association Au-Delà du Regard since 2019. Thanks to this association I was able to leave for a week and a half in the Tunisian desert. After this trip I participated with the association to present the film they made in 2018 and animated debates afterwards. I also made radio with the association to present the trip we had made.</value>
-    <comment>Presentation text of the section</comment>
-  </data>
-  <data name="section_project_personal_button" xml:space="preserve">
-    <value>Au-Delà du Regard</value>
-    <comment>Text of the button for the association</comment>
-  </data>
-  <data name="section_project_personal_image_alt" xml:space="preserve">
-    <value>Logo Au Delà du Regard</value>
-    <comment>Alternative description of the image</comment>
-  </data>
-  <data name="section_project_professional_title" xml:space="preserve">
-    <value>Professional Project</value>
-    <comment>Title of the section</comment>
-  </data>
-  <data name="section_project_professional_text" xml:space="preserve">
-    <value>My professional project is to work in the field of network administration. The orientations for this professional project are either to pass by a BUT Informatique or BTS SNIR or SIO.</value>
-    <comment>Presentation text of the section</comment>
-  </data>
-  <data name="section_competence_title" xml:space="preserve">
-    <value>Competence</value>
-    <comment>Title of the section</comment>
-  </data>
-  <data name="section_competence_level" xml:space="preserve">
-    <value>Level</value>
-    <comment>Label for level gauge</comment>
-  </data>
-  <data name="section_repository_title" xml:space="preserve">
-    <value>Project</value>
-    <comment>Title of the section</comment>
-  </data>
-  <data name="section_repository_card_subtitle" xml:space="preserve">
-    <value>Github</value>
-    <comment>Subtitle of the card</comment>
-  </data>
-  <data name="section_repository_card_information_title" xml:space="preserve">
-    <value>Information</value>
-    <comment>Title of the information part of the card</comment>
-  </data>
-  <data name="section_repository_card_information_subtitle" xml:space="preserve">
-    <value>Description</value>
-    <comment>Subtitle of the information part of the card</comment>
-  </data>
-  <data name="section_repository_card_button" xml:space="preserve">
-    <value>More information</value>
-    <comment>Text of the button for more information on the card</comment>
-  </data>
-  <data name="page_title" xml:space="preserve">
-    <value>Antonin Rouxel - Portfolio</value>
-    <comment>Title of the page</comment>
-  </data>
-  <data name="section_competence_name_development" xml:space="preserve">
-    <value>Development</value>
-    <comment>Name of the competence Development</comment>
-  </data>
-  <data name="section_competence_name_database" xml:space="preserve">
-    <value>Database</value>
-    <comment>Name of the competence Database</comment>
-  </data>
-  <data name="section_competence_name_infrastructure" xml:space="preserve">
-    <value>Infrastructure</value>
-    <comment>Name of the competence Infrastructure</comment>
-  </data>
-  <data name="section_competence_name_operating_system" xml:space="preserve">
-    <value>Operating System</value>
-    <comment>Name of the competence Operating system</comment>
+  <data name="english" xml:space="preserve">
+    <value>Englisch</value>
+    <comment>Englische Sprache</comment>
   </data>
 </root>
