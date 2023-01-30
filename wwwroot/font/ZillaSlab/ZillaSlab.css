@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("ZillaSlabHighlight-Regular.woff2") format("woff2"),
+       url("ZillaSlabHighlight-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("ZillaSlabHighlight-Bold.woff2") format("woff2"),
+       url("ZillaSlabHighlight-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("ZillaSlab-ExtraLight.woff2?v=3.19") format("woff2"),
+       url("ZillaSlab-ExtraLight.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("ZillaSlab-ExtraLightItalic.woff2?v=3.19") format("woff2"),
+       url("ZillaSlab-ExtraLightItalic.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("ZillaSlab-Light.woff2") format("woff2"),
+       url("ZillaSlab-Light.woff") format("woff");
+}
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("ZillaSlab-LightItalic.woff2") format("woff2"),
+       url("ZillaSlab-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("ZillaSlab-Regular.woff2") format("woff2"),
+       url("ZillaSlab-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("ZillaSlab-Italic.woff2") format("woff2"),
+       url("ZillaSlab-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("ZillaSlab-Medium.woff2") format("woff2"),
+       url("ZillaSlab-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("ZillaSlab-MediumItalic.woff2") format("woff2"),
+       url("ZillaSlab-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("ZillaSlab-SemiBold.woff2") format("woff2"),
+       url("ZillaSlab-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("ZillaSlab-SemiBoldItalic.woff2") format("woff2"),
+       url("ZillaSlab-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("ZillaSlab-Bold.woff2") format("woff2"),
+       url("ZillaSlab-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'ZillaSlab';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("ZillaSlab-BoldItalic.woff2") format("woff2"),
+       url("ZillaSlab-BoldItalic.woff") format("woff");
+}

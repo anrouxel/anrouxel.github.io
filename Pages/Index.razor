@@ -30,7 +30,7 @@
                 }
             </div>
             <div class="col-12 col-sm-8 col-md-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">@Loc["section_home_title"]</h1>
+                <h1 class="display-4 fw-bold lh-1 mb-3">@Loc["section_home_title"]</h1>
                 <p class="lead">@Loc["section_home_text"]</p>
             </div>
         </div>
@@ -41,7 +41,7 @@
     <div class="m-auto container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
             <div class="col-12 col-lg-7">
-                <h1 class="display-4 fw-bold lh-1 mb-3 text-center text-lg-start">@Loc["section_project_personal_title"]</h1>
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-center text-lg-start">@Loc["section_project_personal_title"]</h1>
                 <p class="col-lg-10 fs-4 text-start">@Loc["section_project_personal_text"]</p>
                 <div class="d-grid gap-2 d-sm-flex mb-5">
                     <RadzenButton class="rz-border-radius-3 px-4 me-sm-3" Text="@Loc["section_project_personal_button"]" Variant=Variant.Outlined Click="@(() => link("https://www.audeladuregard.fr/"))" />
@@ -60,7 +60,7 @@
     <div class="m-auto container col-xl-10 col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-lg-5 py-5">
             <div class="col-12">
-                <h1 class="display-4 fw-bold lh-1 mb-3 text-center text-lg-start">@Loc["section_project_professional_title"]</h1>
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-center text-lg-start">@Loc["section_project_professional_title"]</h1>
                 <p class="col-lg-10 fs-4 text-start">@Loc["section_project_professional_text"]</p>
             </div>
         </div>
@@ -71,7 +71,7 @@
 {
     <section class="h-100vh d-flex flex-column bg-light">
         <div class="my-auto w-100">
-            <h1 class="fw-bold w-100 text-center">@Loc["section_competence_title"]</h1>
+            <h1 class="display-5 fw-bold w-100 text-center">@Loc["section_competence_title"]</h1>
             <div class="d-flex">
                 <RadzenAccordion class="w-75 m-auto">
                     <Items>
@@ -131,7 +131,7 @@
     <section id="repository" class="h-100vh d-flex flex-column"
         style="background-image: url('img/background.svg'); background-position: 50%; background-size: cover;">
         <div class="my-auto w-100">
-            <h1 class="fw-bold w-100 text-center">@Loc["section_repository_title"]</h1>
+            <h1 class="display-5 fw-bold w-100 text-center">@Loc["section_repository_title"]</h1>
             <div class="d-flex">
                 <RadzenDataList class="w-75 m-auto" PageSize="@PageSize" WrapItems="true" AllowPaging="true"
                 Data="@(github.repo)" TItem="Repo">

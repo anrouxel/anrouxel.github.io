@@ -1,9 +1,14 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+﻿@import url('../font/Inter/inter.css');
+@import url('../font/ZillaSlab/ZillaSlab.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
+}
+
+h1 {
+    font-family: 'ZillaSlab', Helvetica, Arial, sans-serif;
 }
 
 .valid.modified:not([type=checkbox]) {
