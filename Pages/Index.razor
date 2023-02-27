@@ -129,14 +129,14 @@
 @if (github.repo != null)
 {
     <section id="repository" class="h-100vh d-flex flex-column"
-        style="background-image: url('img/background.svg'); background-position: 50%; background-size: cover;">
+        style="background-image: url('img/IMG_5155.JPG'); background-position: 50%; background-size: cover;">
         <div class="my-auto w-100">
             <h1 class="display-5 fw-bold w-100 text-center">@Loc["section_repository_title"]</h1>
             <div class="d-flex">
                 <RadzenDataList class="w-75 m-auto" PageSize="@PageSize" WrapItems="true" AllowPaging="true"
                 Data="@(github.repo)" TItem="Repo">
                     <Template Context="item">
-                        <RadzenCard Style="width: 250px;" Class="rz-border-radius-3">
+                        <RadzenCard Style="width: 250px;" Class="rz-border-radius-3 rz-shadow-10">
                             <div class="d-flex flex-row p-3">
                                 <div>
                                     <RadzenText TextStyle="TextStyle.Overline" Class="d-flex mt-1 mb-0">@Loc["section_repository_card_subtitle"]
