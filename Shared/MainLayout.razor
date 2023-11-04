@@ -1,18 +1,97 @@
 ﻿@inherits LayoutComponentBase
 
-<RadzenDialog/>
-<RadzenNotification/>
-<RadzenContextMenu/>
-<RadzenTooltip/>
+<MudThemeProvider Theme="EU" />
+<MudDialogProvider />
+<MudSnackbarProvider />
 
 <div>
-    <div>
-        <LanguageSelector />
-    </div>
-
     <main>
         <article>
             @Body
+            <MudScrollToTop TopOffset="400" Style="z-index:2000;">
+                <MudIconButton Icon="@Icons.Material.Filled.ArrowUpward" Variant="Variant.Filled" Color="Color.Primary"
+                    DisableElevation="true" Size="Size.Large" />
+            </MudScrollToTop>
         </article>
     </main>
 </div>
+
+@code {
+    MudTheme EU = new MudTheme()
+        {
+            Palette = new PaletteLight()
+            {
+                PrimaryDarken = "#0D40B7",
+                Primary = "#0E47CB",
+                PrimaryLighten = "#3E6CD5",
+                PrimaryContrastText = "#FFFFFF",
+
+                SecondaryDarken = "#E6B800",
+                Secondary = "#FFCC00",
+                SecondaryLighten = "#FFD633",
+                SecondaryContrastText = "#000000",
+
+                SuccessDarken = "#00B583",
+                Success = "#00C991",
+                SuccessLighten = "#33D4A7",
+                SuccessContrastText = "#000000",
+
+                WarningDarken = "#E65800",
+                Warning = "#FF6200",
+                WarningLighten = "#FF8133",
+                WarningContrastText = "#000000",
+
+                ErrorDarken = "#D7003D",
+                Error = "#EF0044",
+                ErrorLighten = "#F23369",
+                ErrorContrastText = "#000000",
+
+                InfoDarken = "#490CB9",
+                Info = "#510DCD",
+                InfoLighten = "#743DD7",
+                InfoContrastText = "#FFFFFF",
+
+                DarkDarken = "#222732",
+                Dark = "#262B38",
+                DarkLighten = "#515560",
+                DarkContrastText = "#FFFFFF",
+            },
+            PaletteDark = new PaletteDark()
+            {
+                                PrimaryDarken = "#0D40B7",
+                Primary = "#0E47CB",
+                PrimaryLighten = "#3E6CD5",
+                PrimaryContrastText = "#FFFFFF",
+
+                SecondaryDarken = "#E6B800",
+                Secondary = "#FFCC00",
+                SecondaryLighten = "#FFD633",
+                SecondaryContrastText = "#000000",
+
+                SuccessDarken = "#00B583",
+                Success = "#00C991",
+                SuccessLighten = "#33D4A7",
+                SuccessContrastText = "#000000",
+
+                WarningDarken = "#E65800",
+                Warning = "#FF6200",
+                WarningLighten = "#FF8133",
+                WarningContrastText = "#000000",
+
+                ErrorDarken = "#D7003D",
+                Error = "#EF0044",
+                ErrorLighten = "#F23369",
+                ErrorContrastText = "#000000",
+
+                InfoDarken = "#490CB9",
+                Info = "#510DCD",
+                InfoLighten = "#743DD7",
+                InfoContrastText = "#FFFFFF",
+
+                DarkDarken = "#222732",
+                Dark = "#262B38",
+                DarkLighten = "#515560",
+                DarkContrastText = "#FFFFFF",
+            },
+        };
+}

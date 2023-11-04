@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antonin Rouxel - Portfolio</title>
     <base href="/" />
     <link rel="shortcut icon" href="icon-192.png">
-    <link rel="stylesheet" href="_content/Radzen.Blazor/css/material-base.css">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-    <link href="css/app.css" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <link href="app.css" rel="stylesheet" />
     <link href="anrouxel.github.io.styles.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
@@ -18,8 +17,8 @@
 
 <body>
     <div id="app">
-        <div id="blazor-load">
-            <img src="img/logo_blanc.svg" alt="Logotype d'Antonin Rouxel — Portfolio">
+        <div id="blazor-load" class="w-screen h-screen flex bg-EUBlue-140">
+            <img class="w-[150px] h-auto m-auto" src="img/logo_blanc.svg" alt="Logotype d'Antonin Rouxel — Portfolio">
         </div>
     </div>
 
@@ -30,8 +29,7 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
-    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
     <script src="js/app.js"></script>
     <script>
         window.blazorCulture = {

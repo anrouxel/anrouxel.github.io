@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "npx tailwindcss -i ./wwwroot/css/app.tailwind.css -o ./wwwroot/app.css --watch",
+    "build:tailwind": "npx tailwindcss -i ./wwwroot/css/app.tailwind.css -o ./wwwroot/app.css",
+    "build": "npm run build:tailwind",
+    "watch": "npm run build:tailwind -- --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
