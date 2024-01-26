@@ -17,11 +17,18 @@
 
 <body>
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+        <div
+            class="relative h-full w-full items-center justify-center bg-EUBlue-140 bg-cover bg-center bg-no-repeat text-white">
+            <div class="flex h-screen items-center justify-center">
+                <h2 class="text-2xl font-bold text-EUPurple-60">
+                    Powered by
+                    <a class="block text-5xl text-white" href="https://www.avaloniaui.net/" target="_blank"
+                        rel="noopener">Antonin Rouxel</a>
+                </h2>
+            </div>
+            <img class="bg-bottom-right pointer-events-none absolute bottom-0 right-0 z-50 mb-[5%] mr-[3%] h-[35%] w-[35%] bg-no-repeat opacity-5"
+                src="Logo.svg" alt="Avalonia Logo" />
+        </div>
     </div>
 
     <div id="blazor-error-ui">
