@@ -112,6 +112,15 @@ module.exports = {
           100: "#000000",
         },
       },
+      keyframes: {
+        splash_in: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+      animation: {
+        splash_in: 'splash_in 0.25s linear forwards',
+      },
     },
   },
   plugins: [],
