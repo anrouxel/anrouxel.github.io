@@ -1,0 +1,598 @@
+/* Variable fonts usage:
+:root { font-family: "NotoSerif", sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: "NotoSerifVariable", sans-serif; font-optical-sizing: auto; }
+} */
+
+@font-face {
+  font-family: NotoSerifVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerifVariable.ttf");
+}
+
+@font-face {
+  font-family: NotoSerifVariable;
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerifVariable-Italic.ttf");
+}
+
+/* static fonts */
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-BlackItalic.ttf");
+}

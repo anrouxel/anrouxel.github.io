@@ -1,0 +1,12 @@
+/* Variable fonts usage:
+:root { font-family: "NotoNotoMusic", sans-serif; }
+*/
+
+/* static fonts */
+@font-face {
+  font-family: "NotoNotoMusic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NotoNotoMusic/NotoNotoMusic-Regular.ttf");
+}

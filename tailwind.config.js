@@ -7,6 +7,27 @@ module.exports = {
     "**/*.cs",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['NotoSans', 'Inter', 'Ubuntu', 'sans-serif'],
+      'serif': ['NotoSerif', 'Ubuntu', 'serif'],
+      'mono': ['NotoSansMono', 'Ubuntu Mono', 'monospace'],
+      'Inter': 'Inter',
+      'InterVariable': 'InterVariable',
+      'Metropolis': 'Metropolis',
+      'ZillaSlab': 'ZillaSlab',
+      'NotoColorEmoji': 'NotoColorEmoji',
+      'NotoEmoji': 'NotoEmoji',
+      'NotoEmojiVariable': 'NotoEmojiVariable',
+      'NotoMusic': 'NotoMusic',
+      'NotoSans': 'NotoSans',
+      'NotoSansVariable': 'NotoSansVariable',
+      'NotoSerif': 'NotoSerif',
+      'NotoSerifVariable': 'NotoSerifVariable',
+      'NotoSansMono': 'NotoSansMono',
+      'NotoSansMonoVariable': 'NotoSansMonoVariable',
+      'Ubuntu': 'Ubuntu',
+      'UbuntuMono': 'UbuntuMono',
+    },
     extend: {
       colors: {
         "EUAccentBlue": {
