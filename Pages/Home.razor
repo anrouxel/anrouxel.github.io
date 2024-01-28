@@ -1,13 +1,16 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Accueil</PageTitle>
 
-<section class="w-screen h-screen">
+<section class="w-screen h-screen select-none">
     <div class="flex size-full">
         <div class="flex-auto size-full hidden md:flex">
             <div class="m-auto">
-                <img src="https://avatars.githubusercontent.com/u/59473377?v=4" alt="Antonin Rouxel" draggable="false"
-                    class="w-96 h-96 rounded-2xl shadow-2xl">
+                @if (github.profile != null)
+                {
+                    <img src="@github.profile.avatar_url" alt="Antonin Rouxel" draggable="false"
+                        class="w-96 h-96 rounded-2xl shadow-2xl animate-splash_in" />
+                }
             </div>
         </div>
         <div class="flex-auto size-full flex">
@@ -20,7 +23,7 @@
                 <div class="my-5" />
                 <div
                     class="text-xl font-mono font-bold text-EUGrey-40 bg-EUGrey-80 w-fit m-auto py-3 px-10 rounded-2xl shadow-2xl">
-                    Développeur &bull; Étudiant</div>
+                    Étudiant &bull; Développeur</div>
                 <div class="my-5" />
                 <div class="m-auto w-fit flex">
                     <button class="text-4xl text-EUGrey-40 hover:text-EUPurple-40">
@@ -44,7 +47,7 @@
     <div class="absolute bottom-10 flex w-full">
         <div class="m-auto">
             <button
-                class="text-EUGrey-40  border-2 border-EUGrey-40 rounded-full p-2 hover:bg-EUGrey-40 hover:text-EUGrey-130 transition duration-300 ease-in-out">
+                class="text-EUGrey-40  border-2 border-EUPurple-40 rounded-full p-2 hover:bg-EUPurple-40 hover:text-EUBlue-140 transition duration-300 ease-in-out">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-10">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
