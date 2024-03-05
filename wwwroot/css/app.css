@@ -1,9 +1,3 @@
-/* Variable fonts usage:
-:root { font-family: "Inter", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
-} */
-
 @font-face {
   font-family: InterVariable;
 
@@ -27,8 +21,6 @@
 
   src: url("../fonts/Inter/InterVariable-Italic.woff2") format("woff2");
 }
-
-/* static fonts */
 
 @font-face {
   font-family: "Inter";
@@ -462,12 +454,6 @@
   src: url("../fonts/Inter/InterDisplay-BlackItalic.woff2") format("woff2");
 }
 
-/* Variable fonts usage:
-:root { font-family: "Metropolis", sans-serif; }
-*/
-
-/* static fonts */
-
 @font-face {
   font-family: "Metropolis";
 
@@ -684,12 +670,6 @@
   src: url("../fonts/Metropolis/Metropolis-BlackItalic.woff2") format("woff2");
 }
 
-/* Variable fonts usage:
-:root { font-family: "ZillaSlab", sans-serif; }
-*/
-
-/* static fonts */
-
 @font-face {
   font-family: "ZillaSlab";
 
@@ -834,12 +814,6 @@
   src: url("../fonts/ZillaSlab/ZillaSlabHighlight-Bold.woff2") format("woff2");
 }
 
-/* Variable fonts usage:
-:root { font-family: "NotoColorEmoji", sans-serif; }
-*/
-
-/* static fonts */
-
 @font-face {
   font-family: "NotoColorEmoji";
 
@@ -852,12 +826,6 @@
   src: url("../fonts/NotoColorEmoji/NotoColorEmoji-Regular.ttf");
 }
 
-/* Variable fonts usage:
-:root { font-family: "NotoEmoji", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "NotoEmojiVariable", sans-serif; font-optical-sizing: auto; }
-} */
-
 @font-face {
   font-family: NotoEmojiVariable;
 
@@ -869,8 +837,6 @@
 
   src: url("../fonts/NotoEmoji/NotoEmojiVariable.ttf");
 }
-
-/* static fonts */
 
 @font-face {
   font-family: "NotoEmoji";
@@ -932,12 +898,6 @@
   src: url("../fonts/NotoEmoji/NotoEmoji-Bold.ttf");
 }
 
-/* Variable fonts usage:
-:root { font-family: "NotoNotoMusic", sans-serif; }
-*/
-
-/* static fonts */
-
 @font-face {
   font-family: "NotoNotoMusic";
 
@@ -949,12 +909,6 @@
 
   src: url("../fonts/NotoNotoMusic/NotoNotoMusic-Regular.ttf");
 }
-
-/* Variable fonts usage:
-:root { font-family: "NotoSans", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "NotoSansVariable", sans-serif; font-optical-sizing: auto; }
-} */
 
 @font-face {
   font-family: NotoSansVariable;
@@ -979,8 +933,6 @@
 
   src: url("../fonts/NotoSans/NotoSansVariable-Italic.ttf");
 }
-
-/* static fonts */
 
 @font-face {
   font-family: "NotoSans";
@@ -1846,12 +1798,6 @@
   src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-BlackItalic.ttf");
 }
 
-/* Variable fonts usage:
-:root { font-family: "NotoSansMono", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "NotoSansMonoVariable", sans-serif; font-optical-sizing: auto; }
-} */
-
 @font-face {
   font-family: NotoSansMonoVariable;
 
@@ -1863,8 +1809,6 @@
 
   src: url("../fonts/NotoSansMono/NotoSansMonoVariable.ttf");
 }
-
-/* static fonts */
 
 @font-face {
   font-family: "NotoSansMono";
@@ -2298,12 +2242,6 @@
   src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-Black.ttf");
 }
 
-/* Variable fonts usage:
-:root { font-family: "NotoSerif", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "NotoSerifVariable", sans-serif; font-optical-sizing: auto; }
-} */
-
 @font-face {
   font-family: NotoSerifVariable;
 
@@ -2327,8 +2265,6 @@
 
   src: url("../fonts/NotoSerif/NotoSerifVariable-Italic.ttf");
 }
-
-/* static fonts */
 
 @font-face {
   font-family: "NotoSerif";
@@ -3194,12 +3130,6 @@
   src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-BlackItalic.ttf");
 }
 
-/* Variable fonts usage:
-:root { font-family: "Ubuntu", sans-serif; }
-*/
-
-/* static fonts */
-
 @font-face {
   font-family: "Ubuntu";
 
@@ -3368,7 +3298,9 @@
   src: url("../fonts/Ubuntu/UbuntuMono-BI.ttf");
 }
 
-/* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
