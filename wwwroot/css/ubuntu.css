@@ -1,8 +1,3 @@
-/* Variable fonts usage:
-:root { font-family: "Ubuntu", sans-serif; }
-*/
-
-/* static fonts */
 @font-face {
   font-family: "Ubuntu";
   font-style: normal;

@@ -1,9 +1,3 @@
-/* Variable fonts usage:
-:root { font-family: "NotoSerif", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "NotoSerifVariable", sans-serif; font-optical-sizing: auto; }
-} */
-
 @font-face {
   font-family: NotoSerifVariable;
   font-style: normal;
@@ -20,7 +14,6 @@
   src: url("../fonts/NotoSerif/NotoSerifVariable-Italic.ttf");
 }
 
-/* static fonts */
 @font-face {
   font-family: "NotoSerif";
   font-style: normal;

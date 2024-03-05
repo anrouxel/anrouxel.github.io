@@ -1,9 +1,3 @@
-/* Variable fonts usage:
-:root { font-family: "NotoEmoji", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "NotoEmojiVariable", sans-serif; font-optical-sizing: auto; }
-} */
-
 @font-face {
   font-family: NotoEmojiVariable;
   font-style: normal;
@@ -12,7 +6,6 @@
   src: url("../fonts/NotoEmoji/NotoEmojiVariable.ttf");
 }
 
-/* static fonts */
 @font-face {
   font-family: "NotoEmoji";
   font-style: normal;
