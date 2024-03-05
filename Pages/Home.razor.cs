@@ -1,6 +1,7 @@
 
 using System.Net.Http.Json;
 using anrouxel.Models;
+using anrouxel.Services;
 using Microsoft.AspNetCore.Components;
 
 namespace anrouxel.Pages
@@ -10,18 +11,17 @@ namespace anrouxel.Pages
         [Inject]
         private NavigationManager navigationManager { get; set; } = null!;
 
-        private readonly Github github = new Github();
+        [Inject]
+        private IGithubService _githubService { get; set; } = null!;
+
+        private Profile? profile { get; set; }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
             if (firstRender)
             {
-                using (var httpClient = new HttpClient())
-                {
-                    github.profile = await httpClient.GetFromJsonAsync<Profile>(Github.GITHUB_API_URL);
-                    github.repositories = await httpClient.GetFromJsonAsync<Repository[]>(github.profile!.repos_url);
-                    StateHasChanged();
-                }
+                profile = await _githubService.GetProfileAsync();
+                StateHasChanged();
             }
         }
 
