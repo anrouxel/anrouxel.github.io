@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-Th.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-L.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-LI.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-R.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-RI.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-M.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-MI.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-B.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-BI.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/Ubuntu-C.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/UbuntuMono-R.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/UbuntuMono-RI.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/UbuntuMono-B.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Ubuntu/UbuntuMono-BI.ttf");
+}
