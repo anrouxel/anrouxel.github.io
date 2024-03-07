@@ -1,0 +1,56 @@
+﻿<section class="w-screen h-screen">
+    <div class="flex size-full">
+        <div class="flex-auto size-full flex">
+            <div class="m-auto max-w-md">
+
+                <form class="mx-auto">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-EUGrey-80 sr-only">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-EUGrey-80" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-full p-4 ps-10 text-sm text-EUGrey-80 border border-EUGrey-80 rounded-2xl bg-EUGrey-10 focus:ring-EUPurple-140 focus:border-EUPurple-140"
+                            placeholder="Search Mockups, Logos..." required />
+                        <button type="submit"
+                            class="text-white absolute w-fit inset-y-0 end-0 bg-EUPurple-100 hover:bg-EUPurple-110 focus:ring-4 focus:outline-none focus:ring-EUPurple-120 font-medium rounded-lg text-sm px-4 py-2 m-2">Search</button>
+                    </div>
+                </form>
+
+                <div class="mt-5 overflow-y-auto max-h-96">
+                    @foreach (var repository in repositories)
+                    {
+                        <div class="flex justify-between gap-x-6 p-5 bg-EUGrey-80 rounded-2xl font-mono">
+                            <div class="flex min-w-0 gap-x-4">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-EUGrey-20">@repository.name</p>
+                                    <p class="mt-1 truncate text-xs leading-5 text-EUGrey-40">@repository.description</p>
+                                </div>
+                            </div>
+                            <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                                <p class="text-sm leading-6 text-EUGrey-20">@repository.language</p>
+                                <p class="mt-1 text-xs leading-5 text-EUGrey-40"><time
+                                        datetime="@(repository.pushed_at)">@(CalculateTimeDifference(repository.pushed_at))</time>
+                                </p>
+                            </div>
+                        </div>
+
+                        @if (repositories.IndexOf(repository) != repositories.Count - 1)
+                        {
+                            <div class="my-5" />
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="flex-auto size-full flex">
+            <div class="m-auto">
+            </div>
+        </div>
+    </div>
+</section>
