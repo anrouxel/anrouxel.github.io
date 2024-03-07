@@ -9,8 +9,6 @@ namespace anrouxel.Services
     {
         Task<Profile?> GetProfileAsync();
 
-        Task<Repository[]?> GetRepositoriesAsync();
-
-        Task<string?> GetAvatarAsync();
+        Task<List<Repository>> GetRepositoriesAsync();
     }
 }

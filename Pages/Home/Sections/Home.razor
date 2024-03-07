@@ -1,10 +1,4 @@
-﻿@page "/"
-
-<PageTitle>Accueil</PageTitle>
-
-<Banners Title="Site en construction" />
-
-<section class="w-screen h-screen">
+﻿<section class="w-screen h-screen">
     <div class="flex size-full">
         <div class="flex-auto size-full hidden md:flex">
             <div class="m-auto">
@@ -20,8 +14,12 @@
                 <div class="text-4xl font-bold text-EUGrey-40 w-fit m-auto" w-fit>
                     Bienvenue, je suis</div>
                 <div class="my-5" />
-                <div class="text-7xl font-Metropolis font-bold text-EUPurple-40 w-fit m-auto">
-                    Antonin Rouxel</div>
+                @if (profile != null)
+                {
+                    <div class="text-7xl font-Metropolis font-bold text-EUPurple-40 w-fit m-auto">
+                        @profile.name
+                    </div>
+                }
                 <div class="my-5" />
                 <div
                     class="text-xl font-mono font-bold text-EUGrey-40 bg-EUGrey-80 w-fit m-auto py-3 px-10 rounded-2xl shadow-2xl">

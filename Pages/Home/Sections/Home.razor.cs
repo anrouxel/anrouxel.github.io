@@ -4,7 +4,7 @@ using anrouxel.Models;
 using anrouxel.Services;
 using Microsoft.AspNetCore.Components;
 
-namespace anrouxel.Pages
+namespace anrouxel.Pages.Home.Sections
 {
     public partial class Home
     {
@@ -16,13 +16,9 @@ namespace anrouxel.Pages
 
         private Profile? profile { get; set; }
 
-        protected override async Task OnAfterRenderAsync(bool firstRender)
+        protected override async Task OnInitializedAsync()
         {
-            if (firstRender)
-            {
-                profile = await _githubService.GetProfileAsync();
-                StateHasChanged();
-            }
+            profile = await _githubService.GetProfileAsync();
         }
 
         private void navigateTo(string uri)

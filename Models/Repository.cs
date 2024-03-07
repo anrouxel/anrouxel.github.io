@@ -97,11 +97,11 @@ namespace anrouxel.Models
 
         public Uri? deployments_url { get; set; }
 
-        public string? created_at { get; set; }
+        public DateTimeOffset created_at { get; set; }
 
-        public string? updated_at { get; set; }
+        public DateTimeOffset updated_at { get; set; }
 
-        public string? pushed_at { get; set; }
+        public DateTimeOffset pushed_at { get; set; }
 
         public Uri? git_url { get; set; }
 
