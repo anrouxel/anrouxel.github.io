@@ -1,13 +1,13 @@
-@import url("inter.css");
-@import url("metropolis.css");
-@import url("zillaslab.css");
-@import url("notocoloremoji.css");
-@import url("notoemoji.css");
-@import url("notomusic.css");
-@import url("notosans.css");
-@import url("notosansmono.css");
-@import url("notoserif.css");
-@import url("ubuntu.css");
+@import url("fonts/inter.css");
+@import url("fonts/metropolis.css");
+@import url("fonts/zillaslab.css");
+@import url("fonts/notocoloremoji.css");
+@import url("fonts/notoemoji.css");
+@import url("fonts/notomusic.css");
+@import url("fonts/notosans.css");
+@import url("fonts/notosansmono.css");
+@import url("fonts/notoserif.css");
+@import url("fonts/ubuntu.css");
 
 @tailwind base;
 @tailwind components;
