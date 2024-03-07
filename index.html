@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anrouxel</title>
+    <base href="/" />
+
+    <link rel="preload" href="css/app.css" as="style" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="anrouxel.styles.css" rel="stylesheet" />
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+</head>
+
+<body class="bg-EUBlue-140 select-none">
+    <div id="app">
+        <div
+            class="relative h-full w-full items-center justify-center bg-cover bg-center bg-no-repeat text-white">
+            <div class="flex h-screen items-center justify-center">
+                <h2 class="text-2xl font-bold text-EUPurple-60">
+                    Powered by
+                    <a class="block text-5xl font-Metropolis font-bold text-white" href="https://www.avaloniaui.net/" target="_blank"
+                        rel="noopener">Antonin Rouxel</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>

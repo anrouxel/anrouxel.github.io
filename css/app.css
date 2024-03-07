@@ -1,0 +1,4469 @@
+@font-face {
+  font-family: InterVariable;
+
+  font-style: normal;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: InterVariable;
+
+  font-style: italic;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterVariable-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-ThinItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-ExtraLightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/Inter-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-ThinItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-ExtraLightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "InterDisplay";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Inter/InterDisplay-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-ThinItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-ExtraLightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/Metropolis/Metropolis-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZillaSlab";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlab-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: ZillaSlabHighlight;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlabHighlight-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: ZillaSlabHighlight;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/ZillaSlab/ZillaSlabHighlight-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NotoColorEmoji";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoColorEmoji/NotoColorEmoji-Regular.ttf");
+}
+
+@font-face {
+  font-family: NotoEmojiVariable;
+
+  font-style: normal;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoEmoji/NotoEmojiVariable.ttf");
+}
+
+@font-face {
+  font-family: "NotoEmoji";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoEmoji/NotoEmoji-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoEmoji";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoEmoji/NotoEmoji-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoEmoji";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoEmoji/NotoEmoji-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoEmoji";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoEmoji/NotoEmoji-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoEmoji";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoEmoji/NotoEmoji-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoNotoMusic";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoNotoMusic/NotoNotoMusic-Regular.ttf");
+}
+
+@font-face {
+  font-family: NotoSansVariable;
+
+  font-style: normal;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSansVariable.ttf");
+}
+
+@font-face {
+  font-family: NotoSansVariable;
+
+  font-style: italic;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSansVariable-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_SemiCondensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansCondensed";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_Condensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSans/NotoSans_ExtraCondensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: NotoSansMonoVariable;
+
+  font-style: normal;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMonoVariable.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMono";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_SemiCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_Condensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansMonoExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSansMono/NotoSansMono_ExtraCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: NotoSerifVariable;
+
+  font-style: normal;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerifVariable.ttf");
+}
+
+@font-face {
+  font-family: NotoSerifVariable;
+
+  font-style: italic;
+
+  font-weight: 100 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerifVariable-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerif";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifSemiCondensed";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_SemiCondensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifCondensed";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_Condensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Thin.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "NotoSerifExtraCondensed";
+
+  font-style: italic;
+
+  font-weight: 900;
+
+  font-display: swap;
+
+  src: url("../fonts/NotoSerif/NotoSerif_ExtraCondensed-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-Th.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-L.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-LI.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-R.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-RI.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-M.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-MI.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-B.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-BI.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuCondensed";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/Ubuntu-C.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/UbuntuMono-R.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/UbuntuMono-RI.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/UbuntuMono-B.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url("../fonts/Ubuntu/UbuntuMono-BI.ttf");
+}
+
+/*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: NotoSans, Inter, Ubuntu, sans-serif;
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: NotoSansMono, Ubuntu Mono, monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+#blazor-error-ui {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+#blazor-error-ui .dismiss {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.me-3 {
+  margin-inline-end: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[calc\(100\%-2rem\)\] {
+  width: calc(100% - 2rem);
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes splash_in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-splash_in {
+  animation: splash_in 0.25s linear forwards;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-EUPurple-40 {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 154 241 / var(--tw-border-opacity));
+}
+
+.border-orange-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22 / var(--tw-border-opacity));
+}
+
+.bg-EUBlue-140 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 43 122 / var(--tw-bg-opacity));
+}
+
+.bg-EUGrey-80 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 85 96 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+}
+
+.bg-orange-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+}
+
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.ps-3 {
+  padding-inline-start: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-Metropolis {
+  font-family: Metropolis;
+}
+
+.font-mono {
+  font-family: NotoSansMono, Ubuntu Mono, monospace;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.text-EUGrey-40 {
+  --tw-text-opacity: 1;
+  color: rgb(168 170 175 / var(--tw-text-opacity));
+}
+
+.text-EUPurple-40 {
+  --tw-text-opacity: 1;
+  color: rgb(191 154 241 / var(--tw-text-opacity));
+}
+
+.text-EUPurple-60 {
+  --tw-text-opacity: 1;
+  color: rgb(151 110 225 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.text-orange-950 {
+  --tw-text-opacity: 1;
+  color: rgb(67 20 7 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:bg-EUPurple-40:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 154 241 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-indigo-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
+.hover\:text-EUBlue-140:hover {
+  --tw-text-opacity: 1;
+  color: rgb(8 43 122 / var(--tw-text-opacity));
+}
+
+.hover\:text-EUPurple-40:hover {
+  --tw-text-opacity: 1;
+  color: rgb(191 154 241 / var(--tw-text-opacity));
+}
+
+.focus-visible\:outline:focus-visible {
+  outline-style: solid;
+}
+
+.focus-visible\:outline-2:focus-visible {
+  outline-width: 2px;
+}
+
+.focus-visible\:outline-offset-2:focus-visible {
+  outline-offset: 2px;
+}
+
+.focus-visible\:outline-indigo-600:focus-visible {
+  outline-color: #4f46e5;
+}
+
+@media (min-width: 640px) {
+  .sm\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:border-gray-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(75 85 99 / var(--tw-border-opacity));
+  }
+
+  .dark\:bg-gray-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-gray-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-gray-400 {
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+}
