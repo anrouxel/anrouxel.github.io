@@ -3,6 +3,6 @@
     "build": "npx tailwindcss -i ./wwwroot/css/app.tailwind.css -o ./wwwroot/css/app.css"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.4"
   }
 }
