@@ -1,14 +1,11 @@
-using System.Net.Http.Json;
-using anrouxel.Configurations;
-using anrouxel.Models;
-using Microsoft.Extensions.Options;
+using Octokit;
 
 namespace anrouxel.Services
 {
     public interface IGithubService
     {
-        Task<Profile?> GetProfileAsync();
+        IObservable<User> GetProfileAsync();
 
-        Task<List<Repository>> GetRepositoriesAsync();
+        IObservable<Repository> GetRepositoriesAsync();
     }
 }

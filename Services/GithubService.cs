@@ -1,46 +1,31 @@
-using System.Net.Http.Json;
 using anrouxel.Configurations;
-using anrouxel.Models;
 using Microsoft.Extensions.Options;
+using Octokit;
+using Octokit.Reactive;
 
 namespace anrouxel.Services
 {
-    public class GithubService : IGithubService
+    public class GithubService: IGithubService
     {
         private readonly GithubSettings _githubSettings;
 
-        private readonly HttpClient _httpClient;
+        private readonly ObservableGitHubClient _client;
 
         public GithubService(
             IOptions<GithubSettings> githubSettings
         ) {
             _githubSettings = githubSettings.Value;
-            _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri(githubSettings.Value.GITHUB_API_URL);
+            _client = new ObservableGitHubClient(new ProductHeaderValue(_githubSettings.GITHUB_PROFILE));
         }
 
-        private string MakeUrl(string? path)
+        public IObservable<User> GetProfileAsync()
         {
-            if (path == null)
-            {
-                return _githubSettings.GITHUB_PROFILE_URL;
-            }
-            return $"{_githubSettings.GITHUB_PROFILE_URL}/{path}";
+            return _client.User.Get(_githubSettings.GITHUB_PROFILE);
         }
 
-        public async Task<Profile?> GetProfileAsync()
+        public IObservable<Repository> GetRepositoriesAsync()
         {
-            return await _httpClient.GetFromJsonAsync<Profile>(MakeUrl(null));
-        }
-
-        public async Task<List<Repository>> GetRepositoriesAsync()
-        {
-            var repositories = await _httpClient.GetFromJsonAsync<List<Repository>>(MakeUrl("repos"));
-            if (repositories == null)
-            {
-                return new List<Repository>();
-            }
-            return repositories;
+            return _client.Repository.GetAllForUser(_githubSettings.GITHUB_PROFILE);
         }
     }
 }
