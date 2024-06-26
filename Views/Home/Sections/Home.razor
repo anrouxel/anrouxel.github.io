@@ -4,8 +4,11 @@
     <div class="flex size-full">
         <div class="flex-auto size-full hidden md:flex">
             <div class="m-auto">
+                @if (ViewModel!.Profile?.AvatarUrl != null)
+                {
                     <img src="@(ViewModel!.Profile?.AvatarUrl)" alt="Antonin Rouxel" draggable="false"
-                        class="w-96 h-96 rounded-full shadow-2xl animate-splash_in" />-->
+                        class="w-96 h-96 rounded-full shadow-2xl animate-splash_in" />
+                }
             </div>
         </div>
         <div class="flex-auto size-full flex">
@@ -13,13 +16,14 @@
                 <div class="text-4xl font-bold text-EUGrey-40 w-fit m-auto" w-fit>
                     Bienvenue, je suis</div>
                 <div class="my-5" />
-                    <div class="text-7xl font-Metropolis font-bold text-EUPurple-40 w-fit m-auto">
-                        @ViewModel!.Profile?.Name
-                    </div>
+                <div class="text-7xl font-Metropolis font-bold text-EUPurple-40 w-fit m-auto">
+                    @ViewModel!.Profile?.Name
+                </div>
                 <div class="my-5" />
                 <div
                     class="text-xl font-mono font-bold text-EUGrey-40 bg-EUGrey-80 w-fit m-auto py-3 px-10 rounded-2xl shadow-2xl">
-                    Étudiant &bull; Développeur</div>
+                    @ViewModel!.Profile?.Bio
+                </div>
                 <div class="my-5" />
                 <div class="m-auto w-fit flex">
                     <button class="text-4xl text-EUGrey-40 hover:text-EUPurple-40">
