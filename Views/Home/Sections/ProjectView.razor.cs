@@ -1,6 +1,7 @@
 using anrouxel.ViewModels;
 using ReactiveUI.Blazor;
 using ReactiveUI;
+using Octokit;
 
 namespace anrouxel.Views.Home.Sections
 {
