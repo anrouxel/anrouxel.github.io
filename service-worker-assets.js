@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-8Ph4h\/L5LEjvEQc7HwDmbWyIwlBpPlg827DbOQmlons=",
+      "hash": "sha256-BBgCo7hnZ4Bqy4JWRIgX+s2hJcJjbZNgjgx9GCv\/o94=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,11 +33,11 @@
       "url": "_framework\/dotnet.native.8.0.6.mvzp48t9ts.js"
     },
     {
-      "hash": "sha256-UYVqoJ8EVoJLkGsQNfOSwUtrhUtVTdCOsjT4SC0nrlY=",
+      "hash": "sha256-6leuoSxU8G+blJotnneJdu9zZm6tCLDp79Y17NkOUPk=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
-      "hash": "sha256-dzarWvG6Q8Yf8+qV9XMiORIV+x6Yc3yQ74giM3qmfrA=",
+      "hash": "sha256-3aolvyn5qXoEReUrYbT4SkJzgoUrAhmnMbGlinmBe\/A=",
       "url": "_framework\/anrouxel.wasm"
     },
     {
@@ -109,15 +109,15 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-ttvHCCMZt99nkZBtVYPdjf+46yQ6eDDf2zyAcI3HQXA=",
+      "hash": "sha256-Zbw3K9wDBO78i2JmaEgfN9yCv\/DxTo+m3UdcPY+Yc3k=",
       "url": "_framework\/netstandard.wasm"
     },
     {
-      "hash": "sha256-+2w\/XLBUC8++juWAx6JZLZEquZXYd78PJ1xCggJN2Ro=",
+      "hash": "sha256-+Fauttb++7zNKNiy4Q0xbSXcjSWs47EgZtUyvq1f2XE=",
       "url": "_framework\/Octokit.Reactive.wasm"
     },
     {
-      "hash": "sha256-lE5H5fMUT6TxHFl4ylZhXc8HVRK7HSx\/rvTF4yjwr+0=",
+      "hash": "sha256-4wHwebU4VW+aDUnbrigSg5s44MNhk6bO\/s7Cgh6asvk=",
       "url": "_framework\/Octokit.wasm"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/System.ComponentModel.wasm"
     },
     {
-      "hash": "sha256-fO8UMv+8VDypy+wQGLmoCvCaDpFrDQlgAfNk7Urr6EE=",
+      "hash": "sha256-ZbNyn00KtT4IIfcjOIHvqN2ZUgR7gaR5m429wl2wjpI=",
       "url": "_framework\/System.Console.wasm"
     },
     {
@@ -213,7 +213,7 @@
       "url": "_framework\/System.ObjectModel.wasm"
     },
     {
-      "hash": "sha256-zwObdbqhsKO4XpUO9E4f9PpjrDgP3DA2R6xUaVZtXWw=",
+      "hash": "sha256-tigbb1ewY9RqREjyM2UyS4MYacYajhRt7pl+TrKht2w=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
@@ -1517,5 +1517,5 @@
       "url": "manifest.webmanifest"
     }
   ],
-  "version": "umnpd7gL"
+  "version": "g78hR2sz"
 };
