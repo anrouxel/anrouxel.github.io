@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "anrouxel",
   "resources": {
-    "hash": "sha256-zKdWOSnkP5t9ODAfnKIqjHEw+rp5kVrSeI/h/LvvNLk=",
+    "hash": "sha256-E/i9waanM3tObxS1y9UdtXq9NeItrym7HqgPdsatFNs=",
     "jsModuleNative": {
       "dotnet.native.8.0.6.mvzp48t9ts.js": "sha256-WICgCXEXqJnsEYSaOa+8TnDe8kDDzZrfFaUbWCjCkh0="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.8.0.6.usxxzh3qee.js": "sha256-+E96dgYQl8OrHQb4yNZ7QwNr3SZzLSP8lwKRzwSiMsw="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-OhrBrjZuFiPsESkLayhKU8bIIFXQ7wcKbRS7P2IBhy4="
+      "dotnet.native.wasm": "sha256-UYVqoJ8EVoJLkGsQNfOSwUtrhUtVTdCOsjT4SC0nrlY="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "anrouxel.wasm": "sha256-3dnRre9rowrWerv44nd7hLfE2Froa5J6TljpLxMPlhs=",
+      "anrouxel.wasm": "sha256-dzarWvG6Q8Yf8+qV9XMiORIV+x6Yc3yQ74giM3qmfrA=",
       "DynamicData.wasm": "sha256-q/Q7qjDeJsALWvujjfyRGhuxGDhau5nCXd3z2oP7gC0=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-a9a0XtXj/nNF2c/zCLJtDC2LN4WmcrG+5ApxF7ViQ6w=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-DUvpzktySFpUWNVEp87C8FbAJYUD6qHu7a6hL+tBSl4=",
