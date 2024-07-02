@@ -20,7 +20,11 @@
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
 
-  <Target Name="NpmBuild" BeforeTargets="Build">
+  <Target Name="NpmBuild" Condition="'$(Configuration)' == 'Debug'" BeforeTargets="Build">
     <Exec Command="npm run build" />
+  </Target>
+
+  <Target Name="NpmPublish" Condition="'$(Configuration)' == 'Release'" BeforeTargets="Build">
+    <Exec Command="npm run publish" />
   </Target>
 </Project>
