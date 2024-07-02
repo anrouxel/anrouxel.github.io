@@ -15,5 +15,6 @@ builder.Services.Configure<GithubSettings>(builder.Configuration.GetSection("Git
 
 builder.Services.AddTransient<IGithubService, GithubService>();
 builder.Services.AddTransient<HomeViewModel>();
+builder.Services.AddTransient<ProjectViewModel>();
 
 await builder.Build().RunAsync();

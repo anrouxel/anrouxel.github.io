@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ReactiveUI;
 using Octokit;
 using System.Reactive.Linq;
+using System.Text.Json;
 
 // View Model qui va gérer la page d'accueil (récupération des données de l'utilisateur)
 namespace anrouxel.ViewModels
@@ -18,7 +19,7 @@ namespace anrouxel.ViewModels
         public HomeViewModel(IGithubService githubService) {
             _githubService = githubService;
 
-            GetProfile = ReactiveCommand.CreateFromTask(GetProfileAsync);
+            GetProfile = ReactiveCommand.CreateFromObservable(GetProfileAsync);
 
             _profile = GetProfile.ToProperty(this, x => x.Profile);
         }
@@ -27,8 +28,8 @@ namespace anrouxel.ViewModels
 
         public User Profile => _profile.Value;
 
-        private async Task<User> GetProfileAsync() {
-            return await _githubService.GetProfileAsync();
+        private IObservable<User> GetProfileAsync() {
+            return _githubService.GetProfileAsync();
         }
     }
 }

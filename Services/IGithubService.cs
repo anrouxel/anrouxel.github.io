@@ -7,5 +7,7 @@ namespace anrouxel.Services
         IObservable<User> GetProfileAsync();
 
         IObservable<Repository> GetRepositoriesAsync();
+
+        IObservable<Repository> GetBestRepositoriesAsync();
     }
 }

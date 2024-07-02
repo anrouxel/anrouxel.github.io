@@ -4,9 +4,9 @@ using ReactiveUI;
 
 namespace anrouxel.Views.Home.Sections
 {
-    public partial class Home: ReactiveInjectableComponentBase<HomeViewModel>
+    public partial class HomeView: ReactiveInjectableComponentBase<HomeViewModel>
     {
-        public Home()
+        public HomeView()
         {
             this.WhenActivated(disposables => {});
         }

@@ -1,3 +1,5 @@
+using System.Reactive.Linq;
+using System.Text.Json;
 using anrouxel.Configurations;
 using Microsoft.Extensions.Options;
 using Octokit;
@@ -26,6 +28,10 @@ namespace anrouxel.Services
         public IObservable<Repository> GetRepositoriesAsync()
         {
             return _client.Repository.GetAllForUser(_githubSettings.GITHUB_PROFILE);
+        }
+
+        public IObservable<Repository> GetBestRepositoriesAsync() {
+            return _client.Repository.GetAllForUser(_githubSettings.GITHUB_PROFILE).Where(repo => _githubSettings.GITHUB_BEST_REPOS.Contains(repo.Name));
         }
     }
 }
