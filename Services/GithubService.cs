@@ -34,10 +34,5 @@ namespace anrouxel.Services
         public IObservable<Repository> GetBestRepositoriesAsync() {
             return _client.Repository.GetAllForUser(_githubSettings.GITHUB_PROFILE).Where(repo => _githubSettings.GITHUB_BEST_REPOS.Contains(repo.Name));
         }
-
-        public IObservable<RepositoryLanguage> GetLanguagesForRepository(long repositoryId)
-        {
-            return _client.Repository.GetAllLanguages("anrouxel", "MedicApp");
-        }
     }
 }

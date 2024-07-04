@@ -31,18 +31,6 @@ namespace anrouxel.ViewModels
 
         private IObservable<IEnumerable<Repository>> GetRepositoriesAsync()
         {
-            Console.WriteLine("Getting repositories");
-
-            _githubService.GetLanguagesForRepository(545679484).Subscribe(
-                res =>
-                {
-                    Console.WriteLine($"Got languages for {res.Name}");
-                },
-                error =>
-                {
-                    Console.WriteLine(error);
-                });
-
             return _githubService.GetBestRepositoriesAsync().ToList();
         }
     }

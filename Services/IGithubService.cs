@@ -9,7 +9,5 @@ namespace anrouxel.Services
         IObservable<Repository> GetRepositoriesAsync();
 
         IObservable<Repository> GetBestRepositoriesAsync();
-
-        IObservable<RepositoryLanguage> GetLanguagesForRepository(long repositoryId);
     }
 }
